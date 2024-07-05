@@ -1,0 +1,6 @@
+framework module GGXSynthesisSpeech {
+  umbrella header "GGXSynthesisSpeech-umbrella.h"
+
+  export *
+  module * { export * }
+}

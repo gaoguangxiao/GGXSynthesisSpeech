@@ -1,0 +1,1298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FD38251D08A0ABF9386BFD4F607555 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57172C3FFCA674BEC18C7D4F9D328AC /* Double+Extension.swift */; };
+		03CA5C012C7FAD2D46D1F1F38864B48C /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386C92CB885D832DBC72F3C3C98C95C /* FileManager+Extension.swift */; };
+		081E24B869F4859D8ADEE8CA7A7B212E /* Pods-GGXSynthesisSpeech_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A2DB7BF43BAADBD202A5DE22CBA20C /* Pods-GGXSynthesisSpeech_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093733387268587DCC94188B38FF9C1D /* UIResponder+ Extension.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB120F79718546319BF8A44291B3B957 /* UIResponder+ Extension.swift.swift */; };
+		09A83293C8AB8216931F2A9AF4E7882C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97A88181AAA922E9F1D5B52C4A2245D /* ReplaceMe.swift */; };
+		0D8B322AA0BA4053ABD99176851FF307 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA684E9391B0B02A776B03B78F47567 /* CGSize+Extension.swift */; };
+		0F38B36F570E266E87AE5085A9E831A4 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532B129F91B6C6C89B1E408C10A35DD /* Array+extension.swift */; };
+		16AF923458A5265DDB82DBEAEDD60B7D /* ZKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9696D015DB658A6A9321AFA2DA2F3D /* ZKLog.swift */; };
+		17C640DED33611A01A3F87E070CA8722 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE0606A1E20487E6ED2F468EBC70ACB /* UIApplication+Extension.swift */; };
+		1A9C64611C2395355B0E95BF6D09D9F0 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88044C6B613D40034124F9940DF708F0 /* URL+Extension.swift */; };
+		1CB34C1FCE2CB8673B14EC79CA6C22DF /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A853537FD0115E2EF59D742E0E50E7E /* UIKit+Extension.swift */; };
+		24356CF1BD3418A26A804CC5CE253C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		246606E5CC10CE41D6B2608C9644DF58 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC28AE934ABE5B1140E1CD083710B0 /* ReplaceMe.swift */; };
+		2C635A93A0B2A66A1EEF994CDA1924C5 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FF85F5CC279EB9F705FDC1611D70E0 /* UITableViewCell+Extension.swift */; };
+		2D3CC403B85C152B853EAD630D25A096 /* Pods-GGXSynthesisSpeech_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBDDC1E9E7C44253095B11FB802C8E3 /* Pods-GGXSynthesisSpeech_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31CEDDB43A13B02C9D59091836A23CB7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAFC42F30A09D19431AC3C0941C26EA /* UIView+Extension.swift */; };
+		36F616C03D39F3C1B6464762C70E831E /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E66F6E0476D299E0FC93A9B9988F1 /* DateFormatter+Extension.swift */; };
+		3B55E9817E6DD96F33BCDA0C1E75DF67 /* UIAlertViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E415ADB55142C1569A14FD36DFD6CEA8 /* UIAlertViewController+Extension.swift */; };
+		3DF2A21434B369E49F40A4F13908A94C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C90A8DB16B52F85BA5F08B753B98DF0 /* String+Extension.swift */; };
+		3E4296825D7081BE3B4C300F34B0ADE2 /* Pods-GGXSynthesisSpeech_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA357A4CFB75D6C815714950D2690E0 /* Pods-GGXSynthesisSpeech_Tests-dummy.m */; };
+		3F28D2387EAFF268FFA1840ECFC793F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		454F0BF35A0DC429D6F34379E660A6FA /* PTDebugView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D0692C0609CA5256A722CD1DF325EF /* PTDebugView-dummy.m */; };
+		45BE6F0D2700B92ED7BF3612A0C65274 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108188C5BCC48DDFAC2586E7F7135C07 /* Date+Extension.swift */; };
+		4A0F3652C61E8322C4D1A12952DE7702 /* AttributeString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257E7AC221646375ABF6DC9979734B12 /* AttributeString+Extension.swift */; };
+		4B8DECBDDDF16F478B29EF644736FB38 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC70AD699637068DAFE7D1261F1585 /* UIDevice+Extension.swift */; };
+		4BB56830BFD24E6FFD10E46ABD7D8AD8 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533438B72B79A85C88060A0AF2F4C8F /* Bundle+Extension.swift */; };
+		545020C16256A8FB1583DFAA081F26C3 /* UIImage+commonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8770D86016F72C5E90862C8D4741AAB4 /* UIImage+commonExtension.swift */; };
+		5567B83170FEC36CDEC7B183B4EB2784 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C2F2BEC7C2318A6DB059AD90BF9AEF /* ReplaceMe.swift */; };
+		5669D62AAA813AD44F937666BB93A07C /* PTDebugView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D64EC618494F174502AAB750C46DF6 /* PTDebugView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		601F7B7F7A69CFF78BAC687BD1B4E80D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9DFD705C6102E679DEFF594D9A3D7 /* UIViewController+Extension.swift */; };
+		66C3A0B2AB34043B7AAC95BE38F4A496 /* MSSynthesisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C76EA7E6EC240961EFD1ECA55CEF7 /* MSSynthesisModel.swift */; };
+		6A17EBBEA17CBE88B43A114D20F33BE2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5106747E77A3C95EB5ED6211D22F420D /* UIColor+Extension.swift */; };
+		6E486C6FABD43B98469BA6E3BD167800 /* GGXSwiftExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4BC83E35513911C5B4F65A8AF4DD2FF /* GGXSwiftExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		761BC81EF6D92C0F4BFA960BA56E3032 /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7A715F4A453908723139D179FD7DE /* UINavigationBar+Extension.swift */; };
+		884D96AF431E4332F8AEB54EA41C4F5F /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89931E0A9ADF01C56D49B4B82A9CAD5C /* Int+Extension.swift */; };
+		891C553F7980716BD32145E2F46EA9F3 /* GGXSwiftExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E631AD64A33B525B6DACAB23E65D741 /* GGXSwiftExtension-dummy.m */; };
+		8A799A773B4C47A9040580641DAFBAC8 /* Pods-GGXSynthesisSpeech_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C26A438D9993DEC039D7CE0F68D31 /* Pods-GGXSynthesisSpeech_Example-dummy.m */; };
+		8F413ACC8731FC529F9983C944600070 /* GGXSynthesisSpeech-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C14935B5D8592A406313EA5069182C5 /* GGXSynthesisSpeech-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		931C17E986BC3590622CBC02AE51CA3E /* UserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336700D09425D83B3DF22461B9A2CDFF /* UserDefault+Extension.swift */; };
+		A85A2654736B0228169A4EEEFA373BFE /* UIEdgeInsets+CommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DCCE046F8D7D7CE48B56D449170DC /* UIEdgeInsets+CommonExtension.swift */; };
+		B3DEB14ADD3A065DB282C644BF8CD1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C1F08F538B463D2C8C765E96466D6F72 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55A60F975AC1FF28571767FC3FAB30 /* WKWebView+Extension.swift */; };
+		C9A2BEAAB73D0A2537DDA3BF78B9F6C2 /* TimerInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558A0F30B98E863F7A20775A64883A6 /* TimerInterval+Extension.swift */; };
+		CA417D015D7065EA8D19F6144AD50BF1 /* AVAudioSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81F26F3A6CF7ECB819C54216971F90 /* AVAudioSession+Extension.swift */; };
+		CEB9C62DF15D8330ECF570C11CEFAB1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D3EC60F1DE94D81018EE2C7252436704 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677163974A46E774C43547D72D5FC0F9 /* Dictionary+Extension.swift */; };
+		D7774F3563A67786F40477EF9B1634F4 /* LogSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389EE6F79D9CFC60B3B6B0316C5EC011 /* LogSwift.swift */; };
+		DB6B631CED7080C307218702083D9EFF /* GGXSynthesisSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6904163B47864120148C7580F780F56 /* GGXSynthesisSpeech-dummy.m */; };
+		F32E2F94CDB37FA9B0953E27DDC6D95B /* MSSynthesisSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA898C0CD0DB7930AC29B0F050CB1D6 /* MSSynthesisSpeech.swift */; };
+		F3E6CF7BD35592934ED04CB63DD99C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FF87BA3FD5C9312039678A2FFAA7188C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1253B3B808D83012A089BF14DA7A6 /* UIImageView+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F5C977D89B570284BC241E8FAF2A4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34208A50A6E2389A7BB30C187CD9E2A4;
+			remoteInfo = GGXSwiftExtension;
+		};
+		1C3AB81DABE2F2D39B5C996E86EF1B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBF15BA98006D7DD90C66334E0D7D7FF;
+			remoteInfo = PTDebugView;
+		};
+		7E2D8E36EED30BCE80C733E58B8C344C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D9A6B16E927674D6E74323256CF5ACF;
+			remoteInfo = GGXSynthesisSpeech;
+		};
+		8620DBEB5F6C0BE76B540E8D8F9405D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D460ED430BB3EC908393D2BE3749A074;
+			remoteInfo = "Pods-GGXSynthesisSpeech_Example";
+		};
+		BD2709A65BBC5599DF9BADD8199B4CFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34208A50A6E2389A7BB30C187CD9E2A4;
+			remoteInfo = GGXSwiftExtension;
+		};
+		DF650A6DE4CD0C105822F899696D370C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBF15BA98006D7DD90C66334E0D7D7FF;
+			remoteInfo = PTDebugView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01562E8BA9FF79D7F2C20FE9C8FD872B /* Pods-GGXSynthesisSpeech_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGXSynthesisSpeech_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		02F659981B0CB2EF6D2340DF38CB49A0 /* GGXSwiftExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGXSwiftExtension.debug.xcconfig; sourceTree = "<group>"; };
+		0991408059104996229207227B3FAE60 /* PTDebugView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTDebugView.debug.xcconfig; sourceTree = "<group>"; };
+		0AA898C0CD0DB7930AC29B0F050CB1D6 /* MSSynthesisSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSSynthesisSpeech.swift; path = GGXSynthesisSpeech/Classes/MSSynthesisSpeech.swift; sourceTree = "<group>"; };
+		0C90A8DB16B52F85BA5F08B753B98DF0 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "GGXSwiftExtension/Classes/String+Extension.swift"; sourceTree = "<group>"; };
+		108188C5BCC48DDFAC2586E7F7135C07 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "GGXSwiftExtension/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
+		200655755B9700CAB302B38DAB98B3E3 /* Pods-GGXSynthesisSpeech_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGXSynthesisSpeech_Tests-Info.plist"; sourceTree = "<group>"; };
+		257E7AC221646375ABF6DC9979734B12 /* AttributeString+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AttributeString+Extension.swift"; path = "GGXSwiftExtension/Classes/AttributeString+Extension.swift"; sourceTree = "<group>"; };
+		28A2DB7BF43BAADBD202A5DE22CBA20C /* Pods-GGXSynthesisSpeech_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGXSynthesisSpeech_Example-umbrella.h"; sourceTree = "<group>"; };
+		305DCCE046F8D7D7CE48B56D449170DC /* UIEdgeInsets+CommonExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+CommonExtension.swift"; path = "GGXSwiftExtension/Classes/UIEdgeInsets+CommonExtension.swift"; sourceTree = "<group>"; };
+		320EB0AC36D6ECFC00DB06A8F169F468 /* GGXSynthesisSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGXSynthesisSpeech.debug.xcconfig; sourceTree = "<group>"; };
+		336700D09425D83B3DF22461B9A2CDFF /* UserDefault+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserDefault+Extension.swift"; path = "GGXSwiftExtension/Classes/UserDefault+Extension.swift"; sourceTree = "<group>"; };
+		37F9DFD705C6102E679DEFF594D9A3D7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "GGXSwiftExtension/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		387C3D2560DA021F2BA8DEE33107881B /* Pods-GGXSynthesisSpeech_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGXSynthesisSpeech_Tests.modulemap"; sourceTree = "<group>"; };
+		389EE6F79D9CFC60B3B6B0316C5EC011 /* LogSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogSwift.swift; path = GGXSwiftExtension/Classes/LogSwift.swift; sourceTree = "<group>"; };
+		38C1748B3DCAA80C92F019505456843A /* PTDebugView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTDebugView.release.xcconfig; sourceTree = "<group>"; };
+		3A853537FD0115E2EF59D742E0E50E7E /* UIKit+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extension.swift"; path = "GGXSwiftExtension/Classes/UIKit+Extension.swift"; sourceTree = "<group>"; };
+		3EBA6D131F138A127975019FF7475980 /* GGXSynthesisSpeech-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGXSynthesisSpeech-prefix.pch"; sourceTree = "<group>"; };
+		421C76EA7E6EC240961EFD1ECA55CEF7 /* MSSynthesisModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSSynthesisModel.swift; path = GGXSynthesisSpeech/Classes/MSSynthesisModel.swift; sourceTree = "<group>"; };
+		46D64EC618494F174502AAB750C46DF6 /* PTDebugView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTDebugView-umbrella.h"; sourceTree = "<group>"; };
+		4D2BB38AD6DD6A70F29AA00D9868D4C3 /* GGXSynthesisSpeech.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GGXSynthesisSpeech.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5106747E77A3C95EB5ED6211D22F420D /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "GGXSwiftExtension/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		523C263160E1D19F204B2B386C68846B /* Pods-GGXSynthesisSpeech_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGXSynthesisSpeech_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5533438B72B79A85C88060A0AF2F4C8F /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "GGXSwiftExtension/Classes/Bundle+Extension.swift"; sourceTree = "<group>"; };
+		5BAFC42F30A09D19431AC3C0941C26EA /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "GGXSwiftExtension/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		5C7C26A438D9993DEC039D7CE0F68D31 /* Pods-GGXSynthesisSpeech_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGXSynthesisSpeech_Example-dummy.m"; sourceTree = "<group>"; };
+		5EA684E9391B0B02A776B03B78F47567 /* CGSize+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Extension.swift"; path = "GGXSwiftExtension/Classes/CGSize+Extension.swift"; sourceTree = "<group>"; };
+		5F540EB4C402C6BB0F4A56F1F909FB21 /* GGXSwiftExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGXSwiftExtension-Info.plist"; sourceTree = "<group>"; };
+		607E1AE85374AD5AF6953AE2B0415B55 /* GGXSwiftExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGXSwiftExtension; path = GGXSwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6532B129F91B6C6C89B1E408C10A35DD /* Array+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+extension.swift"; path = "GGXSwiftExtension/Classes/Array+extension.swift"; sourceTree = "<group>"; };
+		677163974A46E774C43547D72D5FC0F9 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Extension.swift"; path = "GGXSwiftExtension/Classes/Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		699E66F6E0476D299E0FC93A9B9988F1 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Extension.swift"; path = "GGXSwiftExtension/Classes/DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		6DE0606A1E20487E6ED2F468EBC70ACB /* UIApplication+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Extension.swift"; path = "GGXSwiftExtension/Classes/UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		7291ABD39C7C2ADD11741FDFA1F96CE6 /* Pods-GGXSynthesisSpeech_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGXSynthesisSpeech_Example.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7532B49D9F0EAE6CB79F9ED8CBA54966 /* GGXSynthesisSpeech */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGXSynthesisSpeech; path = GGXSynthesisSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77718ED6877DD11C0C8C9070E4045110 /* GGXSynthesisSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGXSynthesisSpeech.modulemap; sourceTree = "<group>"; };
+		7C14935B5D8592A406313EA5069182C5 /* GGXSynthesisSpeech-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGXSynthesisSpeech-umbrella.h"; sourceTree = "<group>"; };
+		8330E183A8B01C1D337065BAC97D7188 /* PTDebugView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTDebugView-prefix.pch"; sourceTree = "<group>"; };
+		8770D86016F72C5E90862C8D4741AAB4 /* UIImage+commonExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+commonExtension.swift"; path = "GGXSwiftExtension/Classes/UIImage+commonExtension.swift"; sourceTree = "<group>"; };
+		88044C6B613D40034124F9940DF708F0 /* URL+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Extension.swift"; path = "GGXSwiftExtension/Classes/URL+Extension.swift"; sourceTree = "<group>"; };
+		89931E0A9ADF01C56D49B4B82A9CAD5C /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "GGXSwiftExtension/Classes/Int+Extension.swift"; sourceTree = "<group>"; };
+		8D942BE239AFE3264988240DD1AE30EA /* Pods-GGXSynthesisSpeech_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGXSynthesisSpeech_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9107D8E1300B23590235318B023E7BFE /* PTDebugView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PTDebugView.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0FF35B24BFAE61E5F15812D75467EB /* GGXSwiftExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGXSwiftExtension.modulemap; sourceTree = "<group>"; };
+		9E631AD64A33B525B6DACAB23E65D741 /* GGXSwiftExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGXSwiftExtension-dummy.m"; sourceTree = "<group>"; };
+		9EAC28AE934ABE5B1140E1CD083710B0 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = GGXSwiftExtension/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		9F78BDD2926FC44F90FFCA2076B8E2BC /* Pods-GGXSynthesisSpeech_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGXSynthesisSpeech_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9FA357A4CFB75D6C815714950D2690E0 /* Pods-GGXSynthesisSpeech_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGXSynthesisSpeech_Tests-dummy.m"; sourceTree = "<group>"; };
+		A386C92CB885D832DBC72F3C3C98C95C /* FileManager+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+Extension.swift"; path = "GGXSwiftExtension/Classes/FileManager+Extension.swift"; sourceTree = "<group>"; };
+		A4BC83E35513911C5B4F65A8AF4DD2FF /* GGXSwiftExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGXSwiftExtension-umbrella.h"; sourceTree = "<group>"; };
+		A52AE81E080C9A4435C602B876569C09 /* GGXSynthesisSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGXSynthesisSpeech.release.xcconfig; sourceTree = "<group>"; };
+		A57172C3FFCA674BEC18C7D4F9D328AC /* Double+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Extension.swift"; path = "GGXSwiftExtension/Classes/Double+Extension.swift"; sourceTree = "<group>"; };
+		A9C2F2BEC7C2318A6DB059AD90BF9AEF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = GGXSynthesisSpeech/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		AFD2B946B379247380807658B6EE3181 /* Pods-GGXSynthesisSpeech_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGXSynthesisSpeech_Example-Info.plist"; sourceTree = "<group>"; };
+		B2038CD6282EB3A76871BD0459136623 /* Pods-GGXSynthesisSpeech_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GGXSynthesisSpeech_Tests"; path = Pods_GGXSynthesisSpeech_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA881DF3BEA34CD0EF3C428287FED9CC /* Pods-GGXSynthesisSpeech_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGXSynthesisSpeech_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA8F36F4082BF034D31AFB32975FFC46 /* PTDebugView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PTDebugView-Info.plist"; sourceTree = "<group>"; };
+		C2C364A50D28167488AC5F02EEA44ED7 /* GGXSwiftExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGXSwiftExtension.release.xcconfig; sourceTree = "<group>"; };
+		C3F7A715F4A453908723139D179FD7DE /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Extension.swift"; path = "GGXSwiftExtension/Classes/UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		C7D1253B3B808D83012A089BF14DA7A6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "GGXSwiftExtension/Classes/UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		CA34F563CEC75E4F3AB1BBE984BAC2D3 /* Pods-GGXSynthesisSpeech_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGXSynthesisSpeech_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB120F79718546319BF8A44291B3B957 /* UIResponder+ Extension.swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIResponder+ Extension.swift.swift"; path = "GGXSwiftExtension/Classes/UIResponder+ Extension.swift.swift"; sourceTree = "<group>"; };
+		CB55A60F975AC1FF28571767FC3FAB30 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKWebView+Extension.swift"; path = "GGXSwiftExtension/Classes/WKWebView+Extension.swift"; sourceTree = "<group>"; };
+		CCEA9861FA5C67D204EBC30EFA2957FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D1B6BB64F26466482B0897AF807E0F67 /* GGXSynthesisSpeech-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGXSynthesisSpeech-Info.plist"; sourceTree = "<group>"; };
+		D5B541E1A4AED0B5A7CF135EBF4AE0EF /* Pods-GGXSynthesisSpeech_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGXSynthesisSpeech_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6FF85F5CC279EB9F705FDC1611D70E0 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+Extension.swift"; path = "GGXSwiftExtension/Classes/UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		DB9696D015DB658A6A9321AFA2DA2F3D /* ZKLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZKLog.swift; path = PTDebugView/Classes/ZKLog.swift; sourceTree = "<group>"; };
+		DBEC70AD699637068DAFE7D1261F1585 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "GGXSwiftExtension/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		DF0982F0E310D09A03221E07CD35044E /* Pods-GGXSynthesisSpeech_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGXSynthesisSpeech_Example.modulemap"; sourceTree = "<group>"; };
+		E07AB1B0A9B887FA2875BA65E26DAB21 /* PTDebugView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PTDebugView; path = PTDebugView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D0692C0609CA5256A722CD1DF325EF /* PTDebugView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PTDebugView-dummy.m"; sourceTree = "<group>"; };
+		E415ADB55142C1569A14FD36DFD6CEA8 /* UIAlertViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertViewController+Extension.swift"; path = "GGXSwiftExtension/Classes/UIAlertViewController+Extension.swift"; sourceTree = "<group>"; };
+		E6904163B47864120148C7580F780F56 /* GGXSynthesisSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGXSynthesisSpeech-dummy.m"; sourceTree = "<group>"; };
+		EB3FA8885D25F1BD7329290C6C3A23F4 /* GGXSwiftExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGXSwiftExtension-prefix.pch"; sourceTree = "<group>"; };
+		EEBDDC1E9E7C44253095B11FB802C8E3 /* Pods-GGXSynthesisSpeech_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGXSynthesisSpeech_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F523DA4702791F787A48FD14280C84B3 /* Pods-GGXSynthesisSpeech_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGXSynthesisSpeech_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F558A0F30B98E863F7A20775A64883A6 /* TimerInterval+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimerInterval+Extension.swift"; path = "GGXSwiftExtension/Classes/TimerInterval+Extension.swift"; sourceTree = "<group>"; };
+		F81A8F03C56281369D833DDE7FF29705 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F97A88181AAA922E9F1D5B52C4A2245D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PTDebugView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		FE4D2A5A099F002A1F84149B9295CBE4 /* Pods-GGXSynthesisSpeech_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GGXSynthesisSpeech_Example"; path = Pods_GGXSynthesisSpeech_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE81F26F3A6CF7ECB819C54216971F90 /* AVAudioSession+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVAudioSession+Extension.swift"; path = "GGXSwiftExtension/Classes/AVAudioSession+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		179F7FF3469AF344D4966F274E017E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F28D2387EAFF268FFA1840ECFC793F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3299CFEFF94E99FC0E081576E4CF314C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DEB14ADD3A065DB282C644BF8CD1BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		374786CFA4712B90B715154DA4253861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E6CF7BD35592934ED04CB63DD99C38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8495E2E5909D859C3AFEFD99F8653F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24356CF1BD3418A26A804CC5CE253C81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C9741C5611755C1F0BCB33BDB3DFA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB9C62DF15D8330ECF570C11CEFAB1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4CAF4CA8285B0612F8ED7F35DC4B7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607E1AE85374AD5AF6953AE2B0415B55 /* GGXSwiftExtension */,
+				7532B49D9F0EAE6CB79F9ED8CBA54966 /* GGXSynthesisSpeech */,
+				FE4D2A5A099F002A1F84149B9295CBE4 /* Pods-GGXSynthesisSpeech_Example */,
+				B2038CD6282EB3A76871BD0459136623 /* Pods-GGXSynthesisSpeech_Tests */,
+				E07AB1B0A9B887FA2875BA65E26DAB21 /* PTDebugView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EC3351CCB3B2F4C92BA50961B0C0276 /* PTDebugView */ = {
+			isa = PBXGroup;
+			children = (
+				F97A88181AAA922E9F1D5B52C4A2245D /* ReplaceMe.swift */,
+				DB9696D015DB658A6A9321AFA2DA2F3D /* ZKLog.swift */,
+				55B133B95E0E2F34C36230CF8DA62194 /* Support Files */,
+			);
+			name = PTDebugView;
+			path = PTDebugView;
+			sourceTree = "<group>";
+		};
+		337BAC1693955C29AA345B9DB999F084 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E0FF35B24BFAE61E5F15812D75467EB /* GGXSwiftExtension.modulemap */,
+				9E631AD64A33B525B6DACAB23E65D741 /* GGXSwiftExtension-dummy.m */,
+				5F540EB4C402C6BB0F4A56F1F909FB21 /* GGXSwiftExtension-Info.plist */,
+				EB3FA8885D25F1BD7329290C6C3A23F4 /* GGXSwiftExtension-prefix.pch */,
+				A4BC83E35513911C5B4F65A8AF4DD2FF /* GGXSwiftExtension-umbrella.h */,
+				02F659981B0CB2EF6D2340DF38CB49A0 /* GGXSwiftExtension.debug.xcconfig */,
+				C2C364A50D28167488AC5F02EEA44ED7 /* GGXSwiftExtension.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GGXSwiftExtension";
+			sourceTree = "<group>";
+		};
+		38C5574E164D5086264FD6B0F8D7AFAF /* GGXSynthesisSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				421C76EA7E6EC240961EFD1ECA55CEF7 /* MSSynthesisModel.swift */,
+				0AA898C0CD0DB7930AC29B0F050CB1D6 /* MSSynthesisSpeech.swift */,
+				A9C2F2BEC7C2318A6DB059AD90BF9AEF /* ReplaceMe.swift */,
+				DDBFA1601FF4FFB07D7568F345D80CAA /* Pod */,
+				91DB381B508782DDCBF50F9F4C245EE3 /* Support Files */,
+			);
+			name = GGXSynthesisSpeech;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		55B133B95E0E2F34C36230CF8DA62194 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9107D8E1300B23590235318B023E7BFE /* PTDebugView.modulemap */,
+				E1D0692C0609CA5256A722CD1DF325EF /* PTDebugView-dummy.m */,
+				BA8F36F4082BF034D31AFB32975FFC46 /* PTDebugView-Info.plist */,
+				8330E183A8B01C1D337065BAC97D7188 /* PTDebugView-prefix.pch */,
+				46D64EC618494F174502AAB750C46DF6 /* PTDebugView-umbrella.h */,
+				0991408059104996229207227B3FAE60 /* PTDebugView.debug.xcconfig */,
+				38C1748B3DCAA80C92F019505456843A /* PTDebugView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PTDebugView";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7258E55A22AF1D6E9C7AB51EE8FF1A1B /* GGXSwiftExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6532B129F91B6C6C89B1E408C10A35DD /* Array+extension.swift */,
+				257E7AC221646375ABF6DC9979734B12 /* AttributeString+Extension.swift */,
+				FE81F26F3A6CF7ECB819C54216971F90 /* AVAudioSession+Extension.swift */,
+				5533438B72B79A85C88060A0AF2F4C8F /* Bundle+Extension.swift */,
+				5EA684E9391B0B02A776B03B78F47567 /* CGSize+Extension.swift */,
+				108188C5BCC48DDFAC2586E7F7135C07 /* Date+Extension.swift */,
+				699E66F6E0476D299E0FC93A9B9988F1 /* DateFormatter+Extension.swift */,
+				677163974A46E774C43547D72D5FC0F9 /* Dictionary+Extension.swift */,
+				A57172C3FFCA674BEC18C7D4F9D328AC /* Double+Extension.swift */,
+				A386C92CB885D832DBC72F3C3C98C95C /* FileManager+Extension.swift */,
+				89931E0A9ADF01C56D49B4B82A9CAD5C /* Int+Extension.swift */,
+				389EE6F79D9CFC60B3B6B0316C5EC011 /* LogSwift.swift */,
+				9EAC28AE934ABE5B1140E1CD083710B0 /* ReplaceMe.swift */,
+				0C90A8DB16B52F85BA5F08B753B98DF0 /* String+Extension.swift */,
+				F558A0F30B98E863F7A20775A64883A6 /* TimerInterval+Extension.swift */,
+				E415ADB55142C1569A14FD36DFD6CEA8 /* UIAlertViewController+Extension.swift */,
+				6DE0606A1E20487E6ED2F468EBC70ACB /* UIApplication+Extension.swift */,
+				5106747E77A3C95EB5ED6211D22F420D /* UIColor+Extension.swift */,
+				DBEC70AD699637068DAFE7D1261F1585 /* UIDevice+Extension.swift */,
+				305DCCE046F8D7D7CE48B56D449170DC /* UIEdgeInsets+CommonExtension.swift */,
+				8770D86016F72C5E90862C8D4741AAB4 /* UIImage+commonExtension.swift */,
+				C7D1253B3B808D83012A089BF14DA7A6 /* UIImageView+Extension.swift */,
+				3A853537FD0115E2EF59D742E0E50E7E /* UIKit+Extension.swift */,
+				C3F7A715F4A453908723139D179FD7DE /* UINavigationBar+Extension.swift */,
+				CB120F79718546319BF8A44291B3B957 /* UIResponder+ Extension.swift.swift */,
+				D6FF85F5CC279EB9F705FDC1611D70E0 /* UITableViewCell+Extension.swift */,
+				5BAFC42F30A09D19431AC3C0941C26EA /* UIView+Extension.swift */,
+				37F9DFD705C6102E679DEFF594D9A3D7 /* UIViewController+Extension.swift */,
+				88044C6B613D40034124F9940DF708F0 /* URL+Extension.swift */,
+				336700D09425D83B3DF22461B9A2CDFF /* UserDefault+Extension.swift */,
+				CB55A60F975AC1FF28571767FC3FAB30 /* WKWebView+Extension.swift */,
+				337BAC1693955C29AA345B9DB999F084 /* Support Files */,
+			);
+			name = GGXSwiftExtension;
+			path = GGXSwiftExtension;
+			sourceTree = "<group>";
+		};
+		91DB381B508782DDCBF50F9F4C245EE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77718ED6877DD11C0C8C9070E4045110 /* GGXSynthesisSpeech.modulemap */,
+				E6904163B47864120148C7580F780F56 /* GGXSynthesisSpeech-dummy.m */,
+				D1B6BB64F26466482B0897AF807E0F67 /* GGXSynthesisSpeech-Info.plist */,
+				3EBA6D131F138A127975019FF7475980 /* GGXSynthesisSpeech-prefix.pch */,
+				7C14935B5D8592A406313EA5069182C5 /* GGXSynthesisSpeech-umbrella.h */,
+				320EB0AC36D6ECFC00DB06A8F169F468 /* GGXSynthesisSpeech.debug.xcconfig */,
+				A52AE81E080C9A4435C602B876569C09 /* GGXSynthesisSpeech.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GGXSynthesisSpeech";
+			sourceTree = "<group>";
+		};
+		971718ABFC87A7D008DAFE0B90745DD2 /* Pods-GGXSynthesisSpeech_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DF0982F0E310D09A03221E07CD35044E /* Pods-GGXSynthesisSpeech_Example.modulemap */,
+				523C263160E1D19F204B2B386C68846B /* Pods-GGXSynthesisSpeech_Example-acknowledgements.markdown */,
+				01562E8BA9FF79D7F2C20FE9C8FD872B /* Pods-GGXSynthesisSpeech_Example-acknowledgements.plist */,
+				5C7C26A438D9993DEC039D7CE0F68D31 /* Pods-GGXSynthesisSpeech_Example-dummy.m */,
+				9F78BDD2926FC44F90FFCA2076B8E2BC /* Pods-GGXSynthesisSpeech_Example-frameworks.sh */,
+				AFD2B946B379247380807658B6EE3181 /* Pods-GGXSynthesisSpeech_Example-Info.plist */,
+				28A2DB7BF43BAADBD202A5DE22CBA20C /* Pods-GGXSynthesisSpeech_Example-umbrella.h */,
+				F523DA4702791F787A48FD14280C84B3 /* Pods-GGXSynthesisSpeech_Example.debug.xcconfig */,
+				7291ABD39C7C2ADD11741FDFA1F96CE6 /* Pods-GGXSynthesisSpeech_Example.release.xcconfig */,
+			);
+			name = "Pods-GGXSynthesisSpeech_Example";
+			path = "Target Support Files/Pods-GGXSynthesisSpeech_Example";
+			sourceTree = "<group>";
+		};
+		A2D1D0A42997A2CDF856C7CA204D419A /* Pods-GGXSynthesisSpeech_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				387C3D2560DA021F2BA8DEE33107881B /* Pods-GGXSynthesisSpeech_Tests.modulemap */,
+				D5B541E1A4AED0B5A7CF135EBF4AE0EF /* Pods-GGXSynthesisSpeech_Tests-acknowledgements.markdown */,
+				8D942BE239AFE3264988240DD1AE30EA /* Pods-GGXSynthesisSpeech_Tests-acknowledgements.plist */,
+				9FA357A4CFB75D6C815714950D2690E0 /* Pods-GGXSynthesisSpeech_Tests-dummy.m */,
+				200655755B9700CAB302B38DAB98B3E3 /* Pods-GGXSynthesisSpeech_Tests-Info.plist */,
+				EEBDDC1E9E7C44253095B11FB802C8E3 /* Pods-GGXSynthesisSpeech_Tests-umbrella.h */,
+				CA34F563CEC75E4F3AB1BBE984BAC2D3 /* Pods-GGXSynthesisSpeech_Tests.debug.xcconfig */,
+				BA881DF3BEA34CD0EF3C428287FED9CC /* Pods-GGXSynthesisSpeech_Tests.release.xcconfig */,
+			);
+			name = "Pods-GGXSynthesisSpeech_Tests";
+			path = "Target Support Files/Pods-GGXSynthesisSpeech_Tests";
+			sourceTree = "<group>";
+		};
+		C20FA9D034C18135F4E7F77CCA059075 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7258E55A22AF1D6E9C7AB51EE8FF1A1B /* GGXSwiftExtension */,
+				2EC3351CCB3B2F4C92BA50961B0C0276 /* PTDebugView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DD817AE5370DB6E7162221DBCC146D74 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C20FA9D034C18135F4E7F77CCA059075 /* Pods */,
+				2C4CAF4CA8285B0612F8ED7F35DC4B7C /* Products */,
+				FD71A448776C7A0C17BF9BFB2C5FC0F1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD817AE5370DB6E7162221DBCC146D74 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38C5574E164D5086264FD6B0F8D7AFAF /* GGXSynthesisSpeech */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DDBFA1601FF4FFB07D7568F345D80CAA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4D2BB38AD6DD6A70F29AA00D9868D4C3 /* GGXSynthesisSpeech.podspec */,
+				CCEA9861FA5C67D204EBC30EFA2957FF /* LICENSE */,
+				F81A8F03C56281369D833DDE7FF29705 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FD71A448776C7A0C17BF9BFB2C5FC0F1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				971718ABFC87A7D008DAFE0B90745DD2 /* Pods-GGXSynthesisSpeech_Example */,
+				A2D1D0A42997A2CDF856C7CA204D419A /* Pods-GGXSynthesisSpeech_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0869335D9F9C739E930BB3B2179380F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5669D62AAA813AD44F937666BB93A07C /* PTDebugView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297AA9D916D3628DEFF9F2E3FD608E13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F413ACC8731FC529F9983C944600070 /* GGXSynthesisSpeech-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C783CA49CA215DB97EA379017B173160 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081E24B869F4859D8ADEE8CA7A7B212E /* Pods-GGXSynthesisSpeech_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E9BE678B8DD16D21C0F1AA2C0719F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D3CC403B85C152B853EAD630D25A096 /* Pods-GGXSynthesisSpeech_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0187072FCC23B27631F65FEA2CE1883 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E486C6FABD43B98469BA6E3BD167800 /* GGXSwiftExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D9A6B16E927674D6E74323256CF5ACF /* GGXSynthesisSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79D4CD3856F9997F953A6DA4328EBBE /* Build configuration list for PBXNativeTarget "GGXSynthesisSpeech" */;
+			buildPhases = (
+				297AA9D916D3628DEFF9F2E3FD608E13 /* Headers */,
+				D2C783D4BFD19968DBE55B10BA120815 /* Sources */,
+				3299CFEFF94E99FC0E081576E4CF314C /* Frameworks */,
+				298CDCD19B9A70995D96CE0D08776C3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F91579ADF998B88CDDF1B37449B2732D /* PBXTargetDependency */,
+			);
+			name = GGXSynthesisSpeech;
+			productName = GGXSynthesisSpeech;
+			productReference = 7532B49D9F0EAE6CB79F9ED8CBA54966 /* GGXSynthesisSpeech */;
+			productType = "com.apple.product-type.framework";
+		};
+		34208A50A6E2389A7BB30C187CD9E2A4 /* GGXSwiftExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764686C1F7973AD1307B4B30619D72EC /* Build configuration list for PBXNativeTarget "GGXSwiftExtension" */;
+			buildPhases = (
+				E0187072FCC23B27631F65FEA2CE1883 /* Headers */,
+				6554B1722272BE818F188F36956C02D6 /* Sources */,
+				7B8495E2E5909D859C3AFEFD99F8653F /* Frameworks */,
+				3A8C4DAD18E1BD6370420EC8FD976C62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GGXSwiftExtension;
+			productName = GGXSwiftExtension;
+			productReference = 607E1AE85374AD5AF6953AE2B0415B55 /* GGXSwiftExtension */;
+			productType = "com.apple.product-type.framework";
+		};
+		393891BEC5EFA30F3AB3A260B330948D /* Pods-GGXSynthesisSpeech_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0323B3D9D8F31EEA2B628E9E8C2F563 /* Build configuration list for PBXNativeTarget "Pods-GGXSynthesisSpeech_Tests" */;
+			buildPhases = (
+				C9E9BE678B8DD16D21C0F1AA2C0719F0 /* Headers */,
+				0BD1F813CF7CE168F7A635B1D2B1A772 /* Sources */,
+				7C9741C5611755C1F0BCB33BDB3DFA69 /* Frameworks */,
+				874953FF14F15C573FA34965E4D0F48B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85170F350C4FA2B9CB8259D34E30C03B /* PBXTargetDependency */,
+			);
+			name = "Pods-GGXSynthesisSpeech_Tests";
+			productName = Pods_GGXSynthesisSpeech_Tests;
+			productReference = B2038CD6282EB3A76871BD0459136623 /* Pods-GGXSynthesisSpeech_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D460ED430BB3EC908393D2BE3749A074 /* Pods-GGXSynthesisSpeech_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57542094735A3CAC5BB54A205A172B5 /* Build configuration list for PBXNativeTarget "Pods-GGXSynthesisSpeech_Example" */;
+			buildPhases = (
+				C783CA49CA215DB97EA379017B173160 /* Headers */,
+				C5C1346890503FB917C9E21E3BE684CC /* Sources */,
+				179F7FF3469AF344D4966F274E017E6F /* Frameworks */,
+				4747A9CAB31AA8BDD55D12A6E62DB24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7C230DBA7DEA5E932F2839D7C1C7149 /* PBXTargetDependency */,
+				35150A2AA06FB671312A10B253870664 /* PBXTargetDependency */,
+				7CCE70D80D3460E8CC6E919BADF79774 /* PBXTargetDependency */,
+			);
+			name = "Pods-GGXSynthesisSpeech_Example";
+			productName = Pods_GGXSynthesisSpeech_Example;
+			productReference = FE4D2A5A099F002A1F84149B9295CBE4 /* Pods-GGXSynthesisSpeech_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBF15BA98006D7DD90C66334E0D7D7FF /* PTDebugView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11524FC986B0A1F1FF1F4E026AA5C1F8 /* Build configuration list for PBXNativeTarget "PTDebugView" */;
+			buildPhases = (
+				0869335D9F9C739E930BB3B2179380F0 /* Headers */,
+				797111CA4F109E9F7FEFA05EE7288BE6 /* Sources */,
+				374786CFA4712B90B715154DA4253861 /* Frameworks */,
+				7122C1BCACF5F1544FEC10A1FD98DF68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442369296F0DECE3BC583964B9E71576 /* PBXTargetDependency */,
+			);
+			name = PTDebugView;
+			productName = PTDebugView;
+			productReference = E07AB1B0A9B887FA2875BA65E26DAB21 /* PTDebugView */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2C4CAF4CA8285B0612F8ED7F35DC4B7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34208A50A6E2389A7BB30C187CD9E2A4 /* GGXSwiftExtension */,
+				2D9A6B16E927674D6E74323256CF5ACF /* GGXSynthesisSpeech */,
+				D460ED430BB3EC908393D2BE3749A074 /* Pods-GGXSynthesisSpeech_Example */,
+				393891BEC5EFA30F3AB3A260B330948D /* Pods-GGXSynthesisSpeech_Tests */,
+				DBF15BA98006D7DD90C66334E0D7D7FF /* PTDebugView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		298CDCD19B9A70995D96CE0D08776C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8C4DAD18E1BD6370420EC8FD976C62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4747A9CAB31AA8BDD55D12A6E62DB24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7122C1BCACF5F1544FEC10A1FD98DF68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874953FF14F15C573FA34965E4D0F48B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BD1F813CF7CE168F7A635B1D2B1A772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4296825D7081BE3B4C300F34B0ADE2 /* Pods-GGXSynthesisSpeech_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6554B1722272BE818F188F36956C02D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F38B36F570E266E87AE5085A9E831A4 /* Array+extension.swift in Sources */,
+				4A0F3652C61E8322C4D1A12952DE7702 /* AttributeString+Extension.swift in Sources */,
+				CA417D015D7065EA8D19F6144AD50BF1 /* AVAudioSession+Extension.swift in Sources */,
+				4BB56830BFD24E6FFD10E46ABD7D8AD8 /* Bundle+Extension.swift in Sources */,
+				0D8B322AA0BA4053ABD99176851FF307 /* CGSize+Extension.swift in Sources */,
+				45BE6F0D2700B92ED7BF3612A0C65274 /* Date+Extension.swift in Sources */,
+				36F616C03D39F3C1B6464762C70E831E /* DateFormatter+Extension.swift in Sources */,
+				D3EC60F1DE94D81018EE2C7252436704 /* Dictionary+Extension.swift in Sources */,
+				00FD38251D08A0ABF9386BFD4F607555 /* Double+Extension.swift in Sources */,
+				03CA5C012C7FAD2D46D1F1F38864B48C /* FileManager+Extension.swift in Sources */,
+				891C553F7980716BD32145E2F46EA9F3 /* GGXSwiftExtension-dummy.m in Sources */,
+				884D96AF431E4332F8AEB54EA41C4F5F /* Int+Extension.swift in Sources */,
+				D7774F3563A67786F40477EF9B1634F4 /* LogSwift.swift in Sources */,
+				246606E5CC10CE41D6B2608C9644DF58 /* ReplaceMe.swift in Sources */,
+				3DF2A21434B369E49F40A4F13908A94C /* String+Extension.swift in Sources */,
+				C9A2BEAAB73D0A2537DDA3BF78B9F6C2 /* TimerInterval+Extension.swift in Sources */,
+				3B55E9817E6DD96F33BCDA0C1E75DF67 /* UIAlertViewController+Extension.swift in Sources */,
+				17C640DED33611A01A3F87E070CA8722 /* UIApplication+Extension.swift in Sources */,
+				6A17EBBEA17CBE88B43A114D20F33BE2 /* UIColor+Extension.swift in Sources */,
+				4B8DECBDDDF16F478B29EF644736FB38 /* UIDevice+Extension.swift in Sources */,
+				A85A2654736B0228169A4EEEFA373BFE /* UIEdgeInsets+CommonExtension.swift in Sources */,
+				545020C16256A8FB1583DFAA081F26C3 /* UIImage+commonExtension.swift in Sources */,
+				FF87BA3FD5C9312039678A2FFAA7188C /* UIImageView+Extension.swift in Sources */,
+				1CB34C1FCE2CB8673B14EC79CA6C22DF /* UIKit+Extension.swift in Sources */,
+				761BC81EF6D92C0F4BFA960BA56E3032 /* UINavigationBar+Extension.swift in Sources */,
+				093733387268587DCC94188B38FF9C1D /* UIResponder+ Extension.swift.swift in Sources */,
+				2C635A93A0B2A66A1EEF994CDA1924C5 /* UITableViewCell+Extension.swift in Sources */,
+				31CEDDB43A13B02C9D59091836A23CB7 /* UIView+Extension.swift in Sources */,
+				601F7B7F7A69CFF78BAC687BD1B4E80D /* UIViewController+Extension.swift in Sources */,
+				1A9C64611C2395355B0E95BF6D09D9F0 /* URL+Extension.swift in Sources */,
+				931C17E986BC3590622CBC02AE51CA3E /* UserDefault+Extension.swift in Sources */,
+				C1F08F538B463D2C8C765E96466D6F72 /* WKWebView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797111CA4F109E9F7FEFA05EE7288BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454F0BF35A0DC429D6F34379E660A6FA /* PTDebugView-dummy.m in Sources */,
+				09A83293C8AB8216931F2A9AF4E7882C /* ReplaceMe.swift in Sources */,
+				16AF923458A5265DDB82DBEAEDD60B7D /* ZKLog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C1346890503FB917C9E21E3BE684CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A799A773B4C47A9040580641DAFBAC8 /* Pods-GGXSynthesisSpeech_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C783D4BFD19968DBE55B10BA120815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6B631CED7080C307218702083D9EFF /* GGXSynthesisSpeech-dummy.m in Sources */,
+				66C3A0B2AB34043B7AAC95BE38F4A496 /* MSSynthesisModel.swift in Sources */,
+				F32E2F94CDB37FA9B0953E27DDC6D95B /* MSSynthesisSpeech.swift in Sources */,
+				5567B83170FEC36CDEC7B183B4EB2784 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35150A2AA06FB671312A10B253870664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GGXSynthesisSpeech;
+			target = 2D9A6B16E927674D6E74323256CF5ACF /* GGXSynthesisSpeech */;
+			targetProxy = 7E2D8E36EED30BCE80C733E58B8C344C /* PBXContainerItemProxy */;
+		};
+		442369296F0DECE3BC583964B9E71576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GGXSwiftExtension;
+			target = 34208A50A6E2389A7BB30C187CD9E2A4 /* GGXSwiftExtension */;
+			targetProxy = 0F5C977D89B570284BC241E8FAF2A4A9 /* PBXContainerItemProxy */;
+		};
+		7CCE70D80D3460E8CC6E919BADF79774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTDebugView;
+			target = DBF15BA98006D7DD90C66334E0D7D7FF /* PTDebugView */;
+			targetProxy = DF650A6DE4CD0C105822F899696D370C /* PBXContainerItemProxy */;
+		};
+		85170F350C4FA2B9CB8259D34E30C03B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GGXSynthesisSpeech_Example";
+			target = D460ED430BB3EC908393D2BE3749A074 /* Pods-GGXSynthesisSpeech_Example */;
+			targetProxy = 8620DBEB5F6C0BE76B540E8D8F9405D4 /* PBXContainerItemProxy */;
+		};
+		B7C230DBA7DEA5E932F2839D7C1C7149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GGXSwiftExtension;
+			target = 34208A50A6E2389A7BB30C187CD9E2A4 /* GGXSwiftExtension */;
+			targetProxy = BD2709A65BBC5599DF9BADD8199B4CFF /* PBXContainerItemProxy */;
+		};
+		F91579ADF998B88CDDF1B37449B2732D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTDebugView;
+			target = DBF15BA98006D7DD90C66334E0D7D7FF /* PTDebugView */;
+			targetProxy = 1C3AB81DABE2F2D39B5C996E86EF1B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E1E05296C53C347DB382AE488BBDF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0991408059104996229207227B3FAE60 /* PTDebugView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PTDebugView/PTDebugView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PTDebugView/PTDebugView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PTDebugView/PTDebugView.modulemap";
+				PRODUCT_MODULE_NAME = PTDebugView;
+				PRODUCT_NAME = PTDebugView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12E3A41CB7FA8D2B15F16E2C2334F901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320EB0AC36D6ECFC00DB06A8F169F468 /* GGXSynthesisSpeech.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech.modulemap";
+				PRODUCT_MODULE_NAME = GGXSynthesisSpeech;
+				PRODUCT_NAME = GGXSynthesisSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		250D5E1FE92455298DE19349C1659D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA881DF3BEA34CD0EF3C428287FED9CC /* Pods-GGXSynthesisSpeech_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Tests/Pods-GGXSynthesisSpeech_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Tests/Pods-GGXSynthesisSpeech_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8912F138B1DCD482100D0744DE3186E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7291ABD39C7C2ADD11741FDFA1F96CE6 /* Pods-GGXSynthesisSpeech_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Example/Pods-GGXSynthesisSpeech_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Example/Pods-GGXSynthesisSpeech_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8628BDFAB5F920C5F56BF6EA83D565D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C364A50D28167488AC5F02EEA44ED7 /* GGXSwiftExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GGXSwiftExtension/GGXSwiftExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GGXSwiftExtension/GGXSwiftExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGXSwiftExtension/GGXSwiftExtension.modulemap";
+				PRODUCT_MODULE_NAME = GGXSwiftExtension;
+				PRODUCT_NAME = GGXSwiftExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BADF16B09CF53FD8F3A3955445943F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52AE81E080C9A4435C602B876569C09 /* GGXSynthesisSpeech.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech.modulemap";
+				PRODUCT_MODULE_NAME = GGXSynthesisSpeech;
+				PRODUCT_NAME = GGXSynthesisSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDF5C9891137839911E8CDA990662BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA34F563CEC75E4F3AB1BBE984BAC2D3 /* Pods-GGXSynthesisSpeech_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Tests/Pods-GGXSynthesisSpeech_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Tests/Pods-GGXSynthesisSpeech_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D8DB86225AF99F507C024C686B56851D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F659981B0CB2EF6D2340DF38CB49A0 /* GGXSwiftExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GGXSwiftExtension/GGXSwiftExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GGXSwiftExtension/GGXSwiftExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGXSwiftExtension/GGXSwiftExtension.modulemap";
+				PRODUCT_MODULE_NAME = GGXSwiftExtension;
+				PRODUCT_NAME = GGXSwiftExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0D3DF7A3E1C21E06C67334EFA95AFA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F523DA4702791F787A48FD14280C84B3 /* Pods-GGXSynthesisSpeech_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Example/Pods-GGXSynthesisSpeech_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGXSynthesisSpeech_Example/Pods-GGXSynthesisSpeech_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF0A37907D40E0E7A0510F02B290F626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C1748B3DCAA80C92F019505456843A /* PTDebugView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PTDebugView/PTDebugView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PTDebugView/PTDebugView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PTDebugView/PTDebugView.modulemap";
+				PRODUCT_MODULE_NAME = PTDebugView;
+				PRODUCT_NAME = PTDebugView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11524FC986B0A1F1FF1F4E026AA5C1F8 /* Build configuration list for PBXNativeTarget "PTDebugView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E1E05296C53C347DB382AE488BBDF20 /* Debug */,
+				EF0A37907D40E0E7A0510F02B290F626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		764686C1F7973AD1307B4B30619D72EC /* Build configuration list for PBXNativeTarget "GGXSwiftExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DB86225AF99F507C024C686B56851D /* Debug */,
+				A8628BDFAB5F920C5F56BF6EA83D565D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0323B3D9D8F31EEA2B628E9E8C2F563 /* Build configuration list for PBXNativeTarget "Pods-GGXSynthesisSpeech_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF5C9891137839911E8CDA990662BF3 /* Debug */,
+				250D5E1FE92455298DE19349C1659D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57542094735A3CAC5BB54A205A172B5 /* Build configuration list for PBXNativeTarget "Pods-GGXSynthesisSpeech_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D3DF7A3E1C21E06C67334EFA95AFA1 /* Debug */,
+				8912F138B1DCD482100D0744DE3186E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F79D4CD3856F9997F953A6DA4328EBBE /* Build configuration list for PBXNativeTarget "GGXSynthesisSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E3A41CB7FA8D2B15F16E2C2334F901 /* Debug */,
+				BADF16B09CF53FD8F3A3955445943F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

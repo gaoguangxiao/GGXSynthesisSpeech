@@ -1,0 +1,27 @@
+PODS:
+  - GGXSwiftExtension (0.5.9)
+  - GGXSynthesisSpeech (0.1.0):
+    - PTDebugView
+  - PTDebugView (0.1.7):
+    - GGXSwiftExtension
+
+DEPENDENCIES:
+  - GGXSynthesisSpeech (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GGXSwiftExtension
+    - PTDebugView
+
+EXTERNAL SOURCES:
+  GGXSynthesisSpeech:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGXSwiftExtension: a070b544382d1d489313d2d2425da0f3eeb18e9c
+  GGXSynthesisSpeech: 46603a3e67d30fce289993ebad6b2db06a770e90
+  PTDebugView: f820bcba8b30ba421016b45f31812c0fdbd731a7
+
+PODFILE CHECKSUM: fe00dd1ca32a3b00e70479b668d51625d3bc8eba
+
+COCOAPODS: 1.15.0
