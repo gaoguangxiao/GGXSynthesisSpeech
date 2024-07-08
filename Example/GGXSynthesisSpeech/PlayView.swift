@@ -27,7 +27,7 @@ struct PlayView: View {
                 Text("播放")
             }
             
-            Text("播放进度：\(viewModel.progress)")
+            Text("播放进度：\(viewModel.tprogress)")
             
             Text("当前播放的文本：\(viewModel.playText)")
             

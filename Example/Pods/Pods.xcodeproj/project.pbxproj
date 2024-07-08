@@ -815,37 +815,6 @@
 			};
 			name = Debug;
 		};
-		12E3A41CB7FA8D2B15F16E2C2334F901 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 320EB0AC36D6ECFC00DB06A8F169F468 /* GGXSynthesisSpeech.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech.modulemap";
-				PRODUCT_MODULE_NAME = GGXSynthesisSpeech;
-				PRODUCT_NAME = GGXSynthesisSpeech;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		250D5E1FE92455298DE19349C1659D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA881DF3BEA34CD0EF3C428287FED9CC /* Pods-GGXSynthesisSpeech_Tests.release.xcconfig */;
@@ -1008,38 +977,6 @@
 			};
 			name = Release;
 		};
-		BADF16B09CF53FD8F3A3955445943F97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A52AE81E080C9A4435C602B876569C09 /* GGXSynthesisSpeech.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech.modulemap";
-				PRODUCT_MODULE_NAME = GGXSynthesisSpeech;
-				PRODUCT_NAME = GGXSynthesisSpeech;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		BDF5C9891137839911E8CDA990662BF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA34F563CEC75E4F3AB1BBE984BAC2D3 /* Pods-GGXSynthesisSpeech_Tests.debug.xcconfig */;
@@ -1067,6 +1004,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C789DFAB44EAE6462B278CA4B81CC84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320EB0AC36D6ECFC00DB06A8F169F468 /* GGXSynthesisSpeech.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech.modulemap";
+				PRODUCT_MODULE_NAME = GGXSynthesisSpeech;
+				PRODUCT_NAME = GGXSynthesisSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1203,6 +1171,38 @@
 			};
 			name = Debug;
 		};
+		E59C2CCF47B36CB14CFC70DA2A636E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52AE81E080C9A4435C602B876569C09 /* GGXSynthesisSpeech.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGXSynthesisSpeech/GGXSynthesisSpeech.modulemap";
+				PRODUCT_MODULE_NAME = GGXSynthesisSpeech;
+				PRODUCT_NAME = GGXSynthesisSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EF0A37907D40E0E7A0510F02B290F626 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38C1748B3DCAA80C92F019505456843A /* PTDebugView.release.xcconfig */;
@@ -1286,8 +1286,8 @@
 		F79D4CD3856F9997F953A6DA4328EBBE /* Build configuration list for PBXNativeTarget "GGXSynthesisSpeech" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12E3A41CB7FA8D2B15F16E2C2334F901 /* Debug */,
-				BADF16B09CF53FD8F3A3955445943F97 /* Release */,
+				C789DFAB44EAE6462B278CA4B81CC84A /* Debug */,
+				E59C2CCF47B36CB14CFC70DA2A636E1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

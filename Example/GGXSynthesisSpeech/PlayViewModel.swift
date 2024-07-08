@@ -10,25 +10,27 @@ import Foundation
 import GGXSynthesisSpeech
 import PTDebugView
 
+struct Config {
+    static let sub = "13aeaa2db83748b2a1bde1af30d1d15e"
+    static let region = "eastus"
+}
+
+
 class PlayViewModel:NSObject, ObservableObject {
     
     var content = "这可能是由于视图的状态和UI更新之间的不一致性所致。为了解决这个问题，你可以采取以下几种方法"
     
-    var _pro: Double = 0.0
+    @Published var tprogress: Double = 0
     
-    @Published var progress: Double = 0
-    
-    @Published var playText: String?
-    
-    var timer: Timer?
-    
+    @Published var playText: String = ""
+        
     lazy var ms: MSSynthesisSpeech = {
         var model = MSSynthesisConfig()
         model.vocal = "zh-CN-XiaochenMultilingualNeural"
         model.rate = 0.75
         model.pitch = 1.2
         model.volume = 1
-        let ms = MSSynthesisSpeech.share
+        let ms = MSSynthesisSpeech(sub: Config.sub, region: Config.region)
         ms.synthesisConfig = model
         
         ms.delegate = self
@@ -36,48 +38,39 @@ class PlayViewModel:NSObject, ObservableObject {
     }()
     
     func play()  {
-    //            model.content = "今天天气怎么样"
+        //            model.content = "今天天气怎么样"
         ms.startSynthesis(text: content)
+        
+//        if let view = UIApplication.rootWindow {
+            //            if let view = UIApplication.rootWindow {
+            //                view.makeToastActivity(.center)
+            //            }
+//        }
     }
     
-    func updatePlayProgress() {
-        _pro = _pro + 0.2
-        
-        Task {
-            await MainActor.run {
-                progress = _pro
-            }
-        }
-        ZKLog("播放进度：\(progress)")
-    }
 }
 
 extension PlayViewModel: MSSynthesisSpeechProtocol {
     func synthesisCompletedEventHandler() {
-        timer?.invalidate()
-        timer = nil
+        //        timer?.invalidate()
+        //        timer = nil
         
-        self.play()
+        //        self.play()
+    }
+    
+    func synthesisCompletedEventHandler(progress: Double) {
+        tprogress = progress
     }
     
     func synthesisPlayEventHandler(text: String) {
         ZKLog("播放内容：\(text)")
+        
+        //已经播放的文本
+        playText = text
     }
     
+    
     func synthesisStartedEventHandler() {
-        _pro = 0.0
         
-        Task {
-            await MainActor.run {
-                timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { [weak self] timer in
-                    self?.updatePlayProgress()
-                }
-            }
-        }
-        
-//        if let timer {
-//            RunLoop.current.add(timer, forMode: .commonModes)
-//            RunLoop.current.run()
-//        }
     }
 }

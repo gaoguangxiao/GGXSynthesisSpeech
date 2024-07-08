@@ -4,7 +4,7 @@ platform :ios, '10.0'
 
 target 'GGXSynthesisSpeech_Example' do
   pod 'GGXSynthesisSpeech', :path => '../'
-
+#  pod 'Toast-Swift'
   target 'GGXSynthesisSpeech_Tests' do
     inherit! :search_paths
 
