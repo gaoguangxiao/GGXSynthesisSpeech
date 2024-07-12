@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GGXSynthesisSpeech'
   s.version          = '0.1.1'
-  s.summary          = 'A short description of GGXSynthesisSpeech.'
+  s.summary          = 'feat:微软语言合成'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -36,8 +36,7 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'GGXSynthesisSpeech' => ['GGXSynthesisSpeech/Assets/*.png']
   # }
-
-#  s.dependency 'MicrosoftCognitiveServicesSpeech-iOS'
+  s.dependency 'MicrosoftCognitiveServicesSpeech-iOS'
   s.dependency 'PTDebugView'
-
+  
 end

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E7DFB092C3526A600CFB5DD /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DFB082C3526A600CFB5DD /* PlayView.swift */; };
-		1E87A71C2C37E59D00547FAA /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A71B2C37E59D00547FAA /* PlayViewModel.swift */; };
+		1E87A71C2C37E59D00547FAA /* SynthesisSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A71B2C37E59D00547FAA /* SynthesisSpeechManager.swift */; };
 		25ED83C1289DDEC50930EE5A /* Pods_GGXSynthesisSpeech_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFC863CF491BF47A6C52A6 /* Pods_GGXSynthesisSpeech_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		0D87C1C7D583A5599A3CB022 /* Pods-GGXSynthesisSpeech_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGXSynthesisSpeech_Tests.release.xcconfig"; path = "Target Support Files/Pods-GGXSynthesisSpeech_Tests/Pods-GGXSynthesisSpeech_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1E7DFB082C3526A600CFB5DD /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
-		1E87A71B2C37E59D00547FAA /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		1E87A71B2C37E59D00547FAA /* SynthesisSpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthesisSpeechManager.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GGXSynthesisSpeech_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGXSynthesisSpeech_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				1E7DFB082C3526A600CFB5DD /* PlayView.swift */,
-				1E87A71B2C37E59D00547FAA /* PlayViewModel.swift */,
+				1E87A71B2C37E59D00547FAA /* SynthesisSpeechManager.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -218,6 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MC9Q66TLXQ;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -278,12 +279,16 @@
 				"${BUILT_PRODUCTS_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/GGXSynthesisSpeech/GGXSynthesisSpeech.framework",
 				"${BUILT_PRODUCTS_DIR}/PTDebugView/PTDebugView.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartCodable/SmartCodable.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech.framework/MicrosoftCognitiveServicesSpeech",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGXSwiftExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGXSynthesisSpeech.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PTDebugView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftCognitiveServicesSpeech.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E87A71C2C37E59D00547FAA /* PlayViewModel.swift in Sources */,
+				1E87A71C2C37E59D00547FAA /* SynthesisSpeechManager.swift in Sources */,
 				1E7DFB092C3526A600CFB5DD /* PlayView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -490,11 +495,12 @@
 			baseConfigurationReference = 6EADBC80D930B5C4E31970BC /* Pods-GGXSynthesisSpeech_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MC9Q66TLXQ;
 				INFOPLIST_FILE = GGXSynthesisSpeech/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.synthesis.ggx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -506,11 +512,12 @@
 			baseConfigurationReference = 80348EFB259589E652F159A9 /* Pods-GGXSynthesisSpeech_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MC9Q66TLXQ;
 				INFOPLIST_FILE = GGXSynthesisSpeech/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.synthesis.ggx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

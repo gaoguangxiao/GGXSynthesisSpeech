@@ -1,13 +1,17 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'GGXSynthesisSpeech_Example' do
   pod 'GGXSynthesisSpeech', :path => '../'
-#  pod 'Toast-Swift'
+  #  pod 'Toast-Swift'
+  pod 'GGXSwiftExtension' , :path => '~/Documents/GitHub/ggxswiftexten'  #工具扩展类
+  pod 'SmartCodable'
+#  pod 'PTDebugView'
+#  , :path => '~/Documents/GitHub/PTDebugView'
+  
   target 'GGXSynthesisSpeech_Tests' do
     inherit! :search_paths
-
     
   end
 end

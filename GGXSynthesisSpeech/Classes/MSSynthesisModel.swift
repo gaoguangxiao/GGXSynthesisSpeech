@@ -9,7 +9,22 @@ import Foundation
 
 public struct MSSynthesisConfig {
     
-//    public var content: String = ""
+    /// 语音
+    public var content: String?
+    
+    // 语言长度 Float类型
+    var contentFloat: Float {
+        let total = content?.count ?? 0
+        let totalStr = String(format: "%.2f", Float(total))
+        return Float(totalStr) ?? 0
+    }
+    
+    /// 语言合成路径
+    public var path: String?
+    
+    /// 语言合成的本地路径
+    public var localFilePath: String = ""
+    
     /// Xiaoshuang
     public var vocal: String = "zh-CN-XiaoshuangNeural"
     

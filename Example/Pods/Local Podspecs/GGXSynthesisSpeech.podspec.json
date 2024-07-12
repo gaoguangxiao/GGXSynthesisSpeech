@@ -1,6 +1,6 @@
 {
   "name": "GGXSynthesisSpeech",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of GGXSynthesisSpeech.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao125@sina.com/GGXSynthesisSpeech",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GGXSynthesisSpeech.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -21,6 +21,9 @@
   },
   "source_files": "GGXSynthesisSpeech/Classes/**/*",
   "dependencies": {
+    "MicrosoftCognitiveServicesSpeech-iOS": [
+
+    ],
     "PTDebugView": [
 
     ]

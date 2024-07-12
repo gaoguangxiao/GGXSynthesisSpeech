@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import PTDebugView
 //@UIApplicationMain
 
 @main
@@ -15,6 +16,9 @@ struct RSChatRobotApp: App {
     var body: some Scene {
         WindowGroup {
             PlayView()
+                .onAppear(perform: {
+                    ZKWLog()
+                })
         }
     }
 }
