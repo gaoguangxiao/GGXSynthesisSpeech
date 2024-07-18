@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GGXSynthesisSpeech'
-  s.version          = '0.1.1'
-  s.summary          = 'feat:微软语言合成'
+  s.version          = '0.1.2'
+  s.summary          = 'feat:初始化`SPXAudioConfiguration`外界传入'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

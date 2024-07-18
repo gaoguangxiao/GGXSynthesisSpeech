@@ -41,6 +41,12 @@ public class MSSynthesisSpeech: NSObject {
     public init(sub: String, region: String) {
         super.init()
         
+//        String resourceId = "Your Resource ID";
+//        String region = "Your Region";
+//
+//        // You need to include the "aad#" prefix and the "#" (hash) separator between resource ID and AAD access token.
+//        String authorizationToken = "aad#" + resourceId + "#" + token;
+//        SpeechConfig speechConfig = SpeechConfig.fromAuthorizationToken(authorizationToken, region);
         do {
             try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
         } catch {
@@ -50,21 +56,21 @@ public class MSSynthesisSpeech: NSObject {
         
     }
     
-    func getSsmlText() -> String? {
-        guard let model = self.synthesisConfig else {
-            return nil
-        }
-        
-        guard let content = model.content else {
-            return nil
-        }
-        let ssmlText = """
-        <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='zh-CN'>
-        <voice name='\(model.vocal)'>
-<prosody pitch='\(model.transPitch)' volume='\(model.transVolume)' rate='\(model.transRate)' >\(content)</prosody></voice></speak>
-"""
-        return ssmlText
-    }
+//    func getSsmlText() -> String? {
+//        guard let model = self.synthesisConfig else {
+//            return nil
+//        }
+//        
+//        guard let content = model.content else {
+//            return nil
+//        }
+//        let ssmlText = """
+//        <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='zh-CN'>
+//        <voice name='\(model.vocal)'>
+//<prosody pitch='\(model.transPitch)' volume='\(model.transVolume)' rate='\(model.transRate)' >\(content)</prosody></voice></speak>
+//"""
+//        return ssmlText
+//    }
 
     func getSsmlText(model: MSSynthesisConfig) -> String? {
         
@@ -114,13 +120,13 @@ public class MSSynthesisSpeech: NSObject {
 extension MSSynthesisSpeech {
     
     /// 执行语音合成的结果，并播放合成的音频。
-    public func startSynthesis(text: String) {
+    public func startSynthesis(text: String, synthesisConfig: MSSynthesisConfig) {
         self.stopSpeaking()
         self.wordBoundarys = []
         DispatchQueue.global().async {
             self.isSynthesizerFinish = false
             self.initConfiguration()
-            guard let ssmlText = self.getSsmlText() else { return  }
+            guard let ssmlText = self.getSsmlText(model: synthesisConfig) else { return  }
             self.speakSsml(ssml: ssmlText)
         }
     }
@@ -161,13 +167,13 @@ extension MSSynthesisSpeech {
 //MARK: - OutputStream
 extension MSSynthesisSpeech {
     
-    public func startSynthesisToPullAudioOutputStream(outFilePath: String) -> Bool {
+    public func startSynthesisToPullAudioOutputStream(outFilePath: String, synthesisConfig: MSSynthesisConfig) -> Bool {
         
         guard let speechConfiguration = self.speechConfig else {
             return false
         }
         
-        guard let ssmlText = getSsmlText() else { return false }
+        guard let ssmlText = getSsmlText(model: synthesisConfig) else { return false }
         
         self.checkConfig()
         
@@ -225,13 +231,13 @@ extension MSSynthesisSpeech {
     // 执行语音合成使用拉音频输出流。
     
     /// 执行语音合成使用推音频输出流。
-    public func startSynthesisToPushAudioOutputStream(outFilePath: String) -> Bool {
+    public func startSynthesisToPushAudioOutputStream(outFilePath: String, synthesisConfig: MSSynthesisConfig) -> Bool {
         
         guard let speechConfiguration = self.speechConfig else {
             return false
         }
         
-        guard let ssmlText = getSsmlText() else { return false }
+        guard let ssmlText = getSsmlText(model: synthesisConfig) else { return false }
         
         self.checkConfig()
         
@@ -334,6 +340,7 @@ extension MSSynthesisSpeech {
             let wordBoundaryEventArgs: SPXSpeechSynthesisWordBoundaryEventArgs = args
             wordBoundarys.append(wordBoundaryEventArgs)
     
+            ZKTLog("addSynthesisCanceledEventHandler\(wordBoundaryEventArgs.text)")
 //            let playText = wordBoundarys.map { $0.text }.reduce("", +)
 //            let floTotal = synthesisConfig?.contentFloat
 //            let progress = Float(playText.count) / (floTotal ?? 1)

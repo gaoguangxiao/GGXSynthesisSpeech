@@ -1,37 +1,31 @@
 PODS:
-  - GGXSwiftExtension (0.6.1)
+  - GGXSwiftExtension (0.6.2)
   - GGXSynthesisSpeech (0.1.1):
     - MicrosoftCognitiveServicesSpeech-iOS
     - PTDebugView
   - MicrosoftCognitiveServicesSpeech-iOS (1.38.0)
   - PTDebugView (0.1.8):
     - GGXSwiftExtension
-  - SmartCodable (4.1.1)
 
 DEPENDENCIES:
-  - GGXSwiftExtension (from `~/Documents/GitHub/ggxswiftexten`)
   - GGXSynthesisSpeech (from `../`)
-  - SmartCodable
 
 SPEC REPOS:
   trunk:
+    - GGXSwiftExtension
     - MicrosoftCognitiveServicesSpeech-iOS
     - PTDebugView
-    - SmartCodable
 
 EXTERNAL SOURCES:
-  GGXSwiftExtension:
-    :path: "~/Documents/GitHub/ggxswiftexten"
   GGXSynthesisSpeech:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGXSwiftExtension: 18dcd5c76b1ea5e64d61e44b26d178e69fd2dc61
-  GGXSynthesisSpeech: 32ea5702ea878526c04ea4889c578ac88cbae78d
+  GGXSwiftExtension: d775a0bb239693525f1d18d71c5aaac29d85ff02
+  GGXSynthesisSpeech: 9eeabb776c5e260615387506b92f3d8e2598c166
   MicrosoftCognitiveServicesSpeech-iOS: 614ca9b9bcb836d210823bf31abef7cb5b101035
   PTDebugView: fcba2d292157f90bb3808d8c3bbfafdb42fada88
-  SmartCodable: 092fd8c698dc958fc95e1d93baf3b497f9ab1715
 
-PODFILE CHECKSUM: 22a9cecfee23dd392e6868575b00a16ff774f5e9
+PODFILE CHECKSUM: 6d3f45fed122a18a0e75cc7c3bc8c57dc69d97ae
 
 COCOAPODS: 1.15.0

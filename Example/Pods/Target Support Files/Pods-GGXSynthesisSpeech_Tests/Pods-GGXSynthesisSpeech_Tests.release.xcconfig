@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGXSwiftExtension" "${PODS_CONFIGURATION_BUILD_DIR}/GGXSynthesisSpeech" "${PODS_CONFIGURATION_BUILD_DIR}/PTDebugView" "${PODS_CONFIGURATION_BUILD_DIR}/SmartCodable" "${PODS_ROOT}/MicrosoftCognitiveServicesSpeech-iOS" "${PODS_XCFRAMEWORKS_BUILD_DIR}/MicrosoftCognitiveServicesSpeech-iOS"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGXSwiftExtension" "${PODS_CONFIGURATION_BUILD_DIR}/GGXSynthesisSpeech" "${PODS_CONFIGURATION_BUILD_DIR}/PTDebugView" "${PODS_ROOT}/MicrosoftCognitiveServicesSpeech-iOS" "${PODS_XCFRAMEWORKS_BUILD_DIR}/MicrosoftCognitiveServicesSpeech-iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GGXSynthesisSpeech/GGXSynthesisSpeech.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PTDebugView/PTDebugView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SmartCodable/SmartCodable.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "GGXSwiftExtension" -framework "GGXSynthesisSpeech" -framework "MicrosoftCognitiveServicesSpeech" -framework "PTDebugView" -framework "SmartCodable"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GGXSynthesisSpeech/GGXSynthesisSpeech.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PTDebugView/PTDebugView.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "GGXSwiftExtension" -framework "GGXSynthesisSpeech" -framework "MicrosoftCognitiveServicesSpeech" -framework "PTDebugView"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

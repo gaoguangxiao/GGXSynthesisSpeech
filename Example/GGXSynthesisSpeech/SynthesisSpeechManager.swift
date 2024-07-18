@@ -10,7 +10,6 @@ import Foundation
 import GGXSynthesisSpeech
 import PTDebugView
 import MicrosoftCognitiveServicesSpeech
-import SmartCodable
 
 struct Config {
     static let sub = "13aeaa2db83748b2a1bde1af30d1d15e"
@@ -45,8 +44,8 @@ class SynthesisSpeechManager: NSObject, ObservableObject {
     
     func play()  {
         tprogress = 0
-        ms?.synthesisConfig = synthesisConfig
-        ms?.startSynthesis(text: content)
+//        ms?.synthesisConfig = synthesisConfig
+        ms?.startSynthesis(text: content,synthesisConfig: synthesisConfig)
     }
     
     func synthesisToFile()  {
@@ -65,12 +64,12 @@ class SynthesisSpeechManager: NSObject, ObservableObject {
     func handleSynthesisToPullAudioOutputStream()  {
         tprogress = 0
         synthesisConfig.path = "/stream"
-        ms?.synthesisConfig = synthesisConfig
+//        ms?.synthesisConfig = synthesisConfig
         if let path = synthesisConfig.path {
             let outFilePath = FileManager.create(folder: folderName, path: path, fileExt: "wav")
             synthesisConfig.localFilePath = outFilePath
             DispatchQueue.global().async {
-                let _ =  self.ms?.startSynthesisToPullAudioOutputStream(outFilePath: outFilePath)
+                let _ =  self.ms?.startSynthesisToPullAudioOutputStream(outFilePath: outFilePath,synthesisConfig: self.synthesisConfig)
             }
         }
     }
@@ -82,7 +81,7 @@ class SynthesisSpeechManager: NSObject, ObservableObject {
         if let path = synthesisConfig.path {
             let outFilePath = FileManager.create(folder: folderName, path: path, fileExt: "wav")
             synthesisConfig.localFilePath = outFilePath
-            let _ =  ms?.startSynthesisToPushAudioOutputStream(outFilePath: outFilePath)
+            let _ =  ms?.startSynthesisToPushAudioOutputStream(outFilePath: outFilePath,synthesisConfig: self.synthesisConfig)
         }
         
     }

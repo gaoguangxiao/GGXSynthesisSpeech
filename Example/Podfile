@@ -5,8 +5,9 @@ platform :ios, '13.0'
 target 'GGXSynthesisSpeech_Example' do
   pod 'GGXSynthesisSpeech', :path => '../'
   #  pod 'Toast-Swift'
-  pod 'GGXSwiftExtension' , :path => '~/Documents/GitHub/ggxswiftexten'  #工具扩展类
-  pod 'SmartCodable'
+#  pod 'GGXSwiftExtension' 
+#  , :path => '~/Documents/GitHub/ggxswiftexten'  #工具扩展类
+#  pod 'SmartCodable'
 #  pod 'PTDebugView'
 #  , :path => '~/Documents/GitHub/PTDebugView'
   

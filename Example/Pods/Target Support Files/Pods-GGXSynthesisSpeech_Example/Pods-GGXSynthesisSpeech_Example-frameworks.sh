@@ -179,14 +179,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GGXSynthesisSpeech/GGXSynthesisSpeech.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PTDebugView/PTDebugView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SmartCodable/SmartCodable.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GGXSynthesisSpeech/GGXSynthesisSpeech.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PTDebugView/PTDebugView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SmartCodable/SmartCodable.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
