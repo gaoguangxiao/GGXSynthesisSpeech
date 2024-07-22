@@ -16,6 +16,9 @@ import MicrosoftCognitiveServicesSpeech
     // stop synthesis callback
     @objc optional func synthesisCanceled(args: SPXSpeechSynthesisEventArgs)
     
+//    delegate?.synthesisError(msg: "合成SDK报错，或因为网络")
+    func synthesisError(error: NSError)
+    
     // 合成进度，已经合成的单词数组
     @objc optional func wordBoundaried(words:Array<Any>)
     

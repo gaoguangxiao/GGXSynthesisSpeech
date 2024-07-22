@@ -14,6 +14,8 @@ import MicrosoftCognitiveServicesSpeech
 struct Config {
     static let sub = "13aeaa2db83748b2a1bde1af30d1d15e"
     static let region = "eastus"
+    
+    static let token = "13aeaa2db83748b2a1bde1af30d1d15e"
 }
 
 
@@ -101,6 +103,7 @@ extension SynthesisSpeechManager {
     
     func create() {
         ms = MSSynthesisSpeech(sub: Config.sub, region: Config.region)
+//        ms = try? MSSynthesisSpeech(token: Config.token, region: Config.region)
         ms?.delegate = self
     }
     
@@ -119,8 +122,24 @@ extension SynthesisSpeechManager {
 }
 
 extension SynthesisSpeechManager: MSSynthesisSpeechProtocol {
+    
+    func synthesisError(msg: String) {
+        ZKLog("报错: \(msg)")
+    }
+    
     func synthesisCanceled(args: SPXSpeechSynthesisEventArgs) {
         ZKLog("停止: \(args.result.resultId)")
+        let result: SPXSpeechSynthesisResult = args.result
+        let reason: SPXResultReason = result.reason
+        switch reason {
+        case .canceled: ZKLog("cancel")
+        case .synthesizingAudioCompleted:ZKLog("synthesizingAudioCompleted")
+        @unknown default: ZKLog("unknown")
+        }
+    }
+    
+    func synthesisError(error: NSError) {
+        ZKLog("error: \(error)")
     }
     
     func synthesisCompleted() {

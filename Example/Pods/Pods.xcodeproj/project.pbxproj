@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = "MicrosoftCognitiveServicesSpeech-iOS";
+			productName = "MicrosoftCognitiveServicesSpeech-iOS";
 		};
 /* End PBXAggregateTarget section */
 
@@ -30,6 +31,7 @@
 		1A290C2ECE6F0C4D163128730C267271 /* MSSynthesisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F70F387E9128781BA4D263355724D3 /* MSSynthesisModel.swift */; };
 		1A9C64611C2395355B0E95BF6D09D9F0 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B170A819714C5BC5CBD94F383FC395 /* URL+Extension.swift */; };
 		1CB34C1FCE2CB8673B14EC79CA6C22DF /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EDD0899E03B2FD3F836F83B67C4C9 /* UIKit+Extension.swift */; };
+		1E813DD22C4A6F4600D368AB /* ResponseFailRetriedable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E813DD12C4A6F4600D368AB /* ResponseFailRetriedable.swift */; };
 		24356CF1BD3418A26A804CC5CE253C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		246606E5CC10CE41D6B2608C9644DF58 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65DABF7FB0B0EB7A4F27A03D60E22 /* ReplaceMe.swift */; };
 		285BDA6413D806473C736C8899EDA899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -147,6 +149,7 @@
 		0F2DFC10DB95B2AC8815F1BFD1D47BCD /* ZKLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZKLogger.swift; path = PTDebugView/Classes/ZKLogger.swift; sourceTree = "<group>"; };
 		1539B007242AFFE8FA892B7A7E92C752 /* GGXSwiftExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGXSwiftExtension.release.xcconfig; sourceTree = "<group>"; };
 		1E57ADE9B1F22EB1AFFFB757413591EA /* ZKLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZKLog.swift; path = PTDebugView/Classes/ZKLog.swift; sourceTree = "<group>"; };
+		1E813DD12C4A6F4600D368AB /* ResponseFailRetriedable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseFailRetriedable.swift; path = GGXSynthesisSpeech/Classes/ResponseFailRetriedable.swift; sourceTree = "<group>"; };
 		200655755B9700CAB302B38DAB98B3E3 /* Pods-GGXSynthesisSpeech_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGXSynthesisSpeech_Tests-Info.plist"; sourceTree = "<group>"; };
 		28A2DB7BF43BAADBD202A5DE22CBA20C /* Pods-GGXSynthesisSpeech_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGXSynthesisSpeech_Example-umbrella.h"; sourceTree = "<group>"; };
 		2B5BC96456494B1374496DCE8AF15B2F /* GGXSynthesisSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGXSynthesisSpeech.release.xcconfig; sourceTree = "<group>"; };
@@ -158,7 +161,7 @@
 		39D7E96BE3CFD36544591590150C1649 /* GGXSynthesisSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGXSynthesisSpeech-dummy.m"; sourceTree = "<group>"; };
 		3B274B06545B07D57D95B89A6B884B7A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PTDebugView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3BBBB2062FAD83F293D4A15DA2D1A17F /* MSSynthesisSpeechProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSSynthesisSpeechProtocol.swift; path = GGXSynthesisSpeech/Classes/MSSynthesisSpeechProtocol.swift; sourceTree = "<group>"; };
-		42D2D0F2B15B3F28D8BD34D6FC866AA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		42D2D0F2B15B3F28D8BD34D6FC866AA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		435BD610428CA7367FC01455D362408A /* PTDebugView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTDebugView.debug.xcconfig; sourceTree = "<group>"; };
 		4450867F7EBA6E098FFA916BC5933455 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Extension.swift"; path = "GGXSwiftExtension/Classes/Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		48FD9356A88DCE06A4CE1C7F3A9F929E /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+Extension.swift"; path = "GGXSwiftExtension/Classes/UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
@@ -172,20 +175,20 @@
 		5EB5D3E8C113AA40651AE43539567ABF /* Array+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+extension.swift"; path = "GGXSwiftExtension/Classes/Array+extension.swift"; sourceTree = "<group>"; };
 		607E1AE85374AD5AF6953AE2B0415B55 /* GGXSwiftExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGXSwiftExtension; path = GGXSwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F3FABF04EE6657452E5E8C9C754B62 /* GGXSwiftExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGXSwiftExtension.modulemap; sourceTree = "<group>"; };
-		6BC865670B782A1CBEE8C6EEC10C89C0 /* GGXSynthesisSpeech.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GGXSynthesisSpeech.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6BC865670B782A1CBEE8C6EEC10C89C0 /* GGXSynthesisSpeech.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GGXSynthesisSpeech.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6BFCD7AD4515F0A7F1338D7B7E05D908 /* PTDebugView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTDebugView-prefix.pch"; sourceTree = "<group>"; };
 		7291ABD39C7C2ADD11741FDFA1F96CE6 /* Pods-GGXSynthesisSpeech_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGXSynthesisSpeech_Example.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7532B49D9F0EAE6CB79F9ED8CBA54966 /* GGXSynthesisSpeech */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGXSynthesisSpeech; path = GGXSynthesisSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76F3449B5DCBFCF1AA25287A4C7511F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		76F3449B5DCBFCF1AA25287A4C7511F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7BDBF7D48C50528BE74D5888CE27A43B /* UIAlertViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertViewController+Extension.swift"; path = "GGXSwiftExtension/Classes/UIAlertViewController+Extension.swift"; sourceTree = "<group>"; };
 		8470356B4A0070C6539C83237FA650FC /* GGXSwiftExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGXSwiftExtension-prefix.pch"; sourceTree = "<group>"; };
-		87C254BE4747846397C748B946C553D6 /* MicrosoftCognitiveServicesSpeech.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MicrosoftCognitiveServicesSpeech.xcframework; sourceTree = "<group>"; };
+		87C254BE4747846397C748B946C553D6 /* MicrosoftCognitiveServicesSpeech.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = MicrosoftCognitiveServicesSpeech.xcframework; sourceTree = "<group>"; };
 		8D942BE239AFE3264988240DD1AE30EA /* Pods-GGXSynthesisSpeech_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGXSynthesisSpeech_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9124AD8A89173798DDCC5A0420671BCE /* WKWebView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKWebView+Extension.swift"; path = "GGXSwiftExtension/Classes/WKWebView+Extension.swift"; sourceTree = "<group>"; };
 		926D819123843A5364ACD1528FDD3B71 /* PTDebugView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PTDebugView-Info.plist"; sourceTree = "<group>"; };
 		997756A23324AD6942EFEF04249B87EB /* PTDebugView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PTDebugView-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E299DDC85EB4FD9390071224EF08536 /* PTDebugView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTDebugView-umbrella.h"; sourceTree = "<group>"; };
 		9F78BDD2926FC44F90FFCA2076B8E2BC /* Pods-GGXSynthesisSpeech_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGXSynthesisSpeech_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9FA357A4CFB75D6C815714950D2690E0 /* Pods-GGXSynthesisSpeech_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGXSynthesisSpeech_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -324,7 +327,6 @@
 				F29D017D37ECFEAF0D2F321701095C95 /* Frameworks */,
 				9C725F1BB1CA3DE7491DB1151EA1A270 /* Support Files */,
 			);
-			name = "MicrosoftCognitiveServicesSpeech-iOS";
 			path = "MicrosoftCognitiveServicesSpeech-iOS";
 			sourceTree = "<group>";
 		};
@@ -337,7 +339,6 @@
 				0F2DFC10DB95B2AC8815F1BFD1D47BCD /* ZKLogger.swift */,
 				0F930E66A99C37AB0EBA25D1A988E832 /* Support Files */,
 			);
-			name = PTDebugView;
 			path = PTDebugView;
 			sourceTree = "<group>";
 		};
@@ -431,7 +432,6 @@
 				9124AD8A89173798DDCC5A0420671BCE /* WKWebView+Extension.swift */,
 				ABBBB7CCF4EEB57E59DFC1CBF41D32BC /* Support Files */,
 			);
-			name = GGXSwiftExtension;
 			path = GGXSwiftExtension;
 			sourceTree = "<group>";
 		};
@@ -490,6 +490,7 @@
 			children = (
 				D8F70F387E9128781BA4D263355724D3 /* MSSynthesisModel.swift */,
 				C856654F582E2FBBC2F70D694538518F /* MSSynthesisSpeech.swift */,
+				1E813DD12C4A6F4600D368AB /* ResponseFailRetriedable.swift */,
 				3BBBB2062FAD83F293D4A15DA2D1A17F /* MSSynthesisSpeechProtocol.swift */,
 				02E061E3B0B428BC988FE1F97B26B161 /* ReplaceMe.swift */,
 				0C2288519060683AE44FBC825976E13D /* WordBoundaryEventArgs+Extensions.swift */,
@@ -834,6 +835,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E813DD22C4A6F4600D368AB /* ResponseFailRetriedable.swift in Sources */,
 				916505B62B8D022D99BC5B25A7BA2B78 /* GGXSynthesisSpeech-dummy.m in Sources */,
 				1A290C2ECE6F0C4D163128730C267271 /* MSSynthesisModel.swift in Sources */,
 				54C8642C23BC21B10B80495C02C36D9A /* MSSynthesisSpeech.swift in Sources */,
@@ -1201,8 +1203,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

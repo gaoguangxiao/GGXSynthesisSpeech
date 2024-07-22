@@ -13,7 +13,39 @@ public enum SynthesisSpeechError: Error {
     case outFilePathEmpty
 }
 
-public class MSSynthesisSpeech: NSObject {
+
+public class MSSynthesisSpeech: NSObject, ResponseFailRetriedable {
+
+    public var allFailCount: Int = 3
+    
+    public var failCount: Int = 0
+    
+    public var retriedID: String = "0"
+    
+    public typealias T = MSSynthesisConfig
+    
+    public var retried: MSSynthesisConfig = MSSynthesisConfig()
+    
+    public func execute() {
+        guard let speechConfiguration = self.speechConfig else {
+            fatalError("`SPXSpeechConfiguration`需要提前初始化")
+        }
+        guard let ssmlText = getSsmlText(model: retried) else {
+            return
+        }
+        self.checkConfig()
+        let audioconfig = try? SPXAudioConfiguration(wavFileOutput: retried.localFilePath)
+        self.synthesizer = try? SPXSpeechSynthesizer(speechConfiguration: speechConfiguration, audioConfiguration: audioconfig)
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.speakSsml(ssml: ssmlText)
+        }
+       
+    }
+    
+    public func completeRetried(error: NSError) {
+        delegate?.synthesisError(error: error)
+    }
     
     @PTLogger(category: "synthesisSpeech")
     private var logger
@@ -28,11 +60,13 @@ public class MSSynthesisSpeech: NSObject {
     
     var isSynthesizerFinish = false
     
-    //定时
-//    var timer: Timer?
+    //增加合成标签，用于判定是否手动停止，对cancen的回调区分，网络失败-手动停止都会触发，当`isUserStop`为true，在回调中改为用户取消，否则视为错误
+    var isUserStop = false
     
-    var _pro: Float = 0.0
+    //建立一个协议，用于标志存储key-对象
+    var requestProgress: Dictionary<String, Any> = [:]
     
+
     var startSpeakTime = 0.0
     
     /// 单词的截取
@@ -40,13 +74,6 @@ public class MSSynthesisSpeech: NSObject {
     
     public init(sub: String, region: String) {
         super.init()
-        
-//        String resourceId = "Your Resource ID";
-//        String region = "Your Region";
-//
-//        // You need to include the "aad#" prefix and the "#" (hash) separator between resource ID and AAD access token.
-//        String authorizationToken = "aad#" + resourceId + "#" + token;
-//        SpeechConfig speechConfig = SpeechConfig.fromAuthorizationToken(authorizationToken, region);
         do {
             try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
         } catch {
@@ -56,22 +83,23 @@ public class MSSynthesisSpeech: NSObject {
         
     }
     
-//    func getSsmlText() -> String? {
-//        guard let model = self.synthesisConfig else {
-//            return nil
-//        }
-//        
-//        guard let content = model.content else {
-//            return nil
-//        }
-//        let ssmlText = """
-//        <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='zh-CN'>
-//        <voice name='\(model.vocal)'>
-//<prosody pitch='\(model.transPitch)' volume='\(model.transVolume)' rate='\(model.transRate)' >\(content)</prosody></voice></speak>
-//"""
-//        return ssmlText
-//    }
-
+    /*
+     //        String resourceId = "Your Resource ID";
+     //        String region = "Your Region";
+     //
+     //        // You need to include the "aad#" prefix and the "#" (hash) separator between resource ID and AAD access token.
+     //        String authorizationToken = "aad#" + resourceId + "#" + token;
+     //        SpeechConfig speechConfig = SpeechConfig.fromAuthorizationToken(authorizationToken, region);
+     **/
+    public init(token: String, region: String) throws {
+        do {
+            try speechConfig = SPXSpeechConfiguration(authorizationToken: token, region: region)
+        } catch {
+            print("error \(error) happened")
+            throw error
+        }
+    }
+    
     func getSsmlText(model: MSSynthesisConfig) -> String? {
         
         guard let content = model.content else {
@@ -89,28 +117,13 @@ public class MSSynthesisSpeech: NSObject {
     func checkConfig() {
         self.stopSpeaking()
         self.wordBoundarys = []
+        self.isUserStop = false
+    }
+    
+    func resetSynthesisAllowFail(msgID: String, error: NSError) {
         
     }
 
-//    func updatePlayProgress() {
-//        _pro = _pro + 0.1
-//        
-//        self.delegate?.synthesisCompletedEventHandler(progress: _pro)
-//        
-//        //当前播放的纳秒 100
-//        let currentAudio = _pro * pow(10, 7)
-//        //        ZKTLog("播放进度：\(currentAudio)")
-//        //        print("播放的")
-//        //        字边界音频偏移量，以刻度为单位(100纳秒)。 audioOffset
-//        
-//        //查询播放的文字
-//        let playText =  wordBoundarys.filter { $0.audioOffset < UInt(currentAudio) }
-//            .map { $0.text }
-//            .reduce("", +)
-//        
-//        self.delegate?.synthesisPlayEventHandler(text: playText)
-//    }
-    
     deinit {
         logger.debug("\(self) deinit")
     }
@@ -145,21 +158,27 @@ extension MSSynthesisSpeech {
     
     public func startSynthesisToFile(outFilePath: String, synthesisConfig: MSSynthesisConfig) throws -> Bool {
         
-        guard let speechConfiguration = self.speechConfig else {
-            return false
-        }
-                
-        guard let ssmlText = getSsmlText(model: synthesisConfig) else { return false }
+        self.retriedID = String.randomString(length: 10)
         
-        self.checkConfig()
+        self.retried = synthesisConfig
         
-        let audioconfig = try? SPXAudioConfiguration(wavFileOutput: outFilePath)
-        self.synthesizer = try? SPXSpeechSynthesizer(speechConfiguration: speechConfiguration, audioConfiguration: audioconfig)
+        self.execute()
         
-        DispatchQueue.global(qos: .userInteractive).async {
-            self.speakSsml(ssml: ssmlText)
-        }
-       
+//        guard let speechConfiguration = self.speechConfig else {
+//            return false
+//        }
+//        
+//        guard let ssmlText = getSsmlText(model: synthesisConfig) else { return false }
+//        
+//        self.checkConfig()
+//        
+//        let audioconfig = try? SPXAudioConfiguration(wavFileOutput: outFilePath)
+//        self.synthesizer = try? SPXSpeechSynthesizer(speechConfiguration: speechConfiguration, audioConfiguration: audioconfig)
+//        
+//        DispatchQueue.global(qos: .userInteractive).async {
+//            self.speakSsml(ssml: ssmlText)
+//        }
+//       
         return true
     }
 }
@@ -280,6 +299,7 @@ extension MSSynthesisSpeech {
 extension MSSynthesisSpeech {
     
     public func stopSpeaking() {
+        self.isUserStop = true
         DispatchQueue.global(qos: .userInitiated).async {
             try? self.synthesizer?.stopSpeaking()
             self.logger.debug("stopSpeaking")
@@ -330,6 +350,13 @@ extension MSSynthesisSpeech {
         
         synthesizer?.addSynthesisCanceledEventHandler({ [weak self]  synthesizer, args in
             guard let self else { return }
+            guard isUserStop else {
+//                delegate?.synthesisError(msg: "合成SDK报错，或因为网络")
+                failCount += failCount + 1
+                restartExecute(error: NSError(domain: "sy", code: -1,userInfo: ["msg":"合成SDK报错，或因为网络"]))
+//                resetExecute(error: <#T##NSError#>)
+                return
+            }
             delegate?.synthesisCanceled?(args: args)
             logger.debug("addSynthesisCanceledEventHandler")
 //            ZKTLog("addSynthesisCanceledEventHandler\(args.result)")
@@ -340,7 +367,7 @@ extension MSSynthesisSpeech {
             let wordBoundaryEventArgs: SPXSpeechSynthesisWordBoundaryEventArgs = args
             wordBoundarys.append(wordBoundaryEventArgs)
     
-            ZKTLog("addSynthesisCanceledEventHandler\(wordBoundaryEventArgs.text)")
+            ZKTLog("addSynthesisWordBoundaryEventHandler\(wordBoundaryEventArgs.text)")
 //            let playText = wordBoundarys.map { $0.text }.reduce("", +)
 //            let floTotal = synthesisConfig?.contentFloat
 //            let progress = Float(playText.count) / (floTotal ?? 1)
@@ -374,7 +401,7 @@ extension MSSynthesisSpeech {
 //    }
     
     func startedEventHandler(result: SPXSpeechSynthesisResult) {
-        _pro = 0.0
+//        _pro = 0.0
         
         let acquireResultTime = CFAbsoluteTimeGetCurrent()
         if #available(iOS 14.0, *) {
