@@ -20,7 +20,7 @@ public class MSSynthesisSpeech: NSObject, ResponseFailRetriedable {
     
     public var failCount: Int = 0
     
-    public var retriedID: String = "0"
+//    public var retriedID: String = "0"
     
     public typealias T = MSSynthesisConfig
     
@@ -157,9 +157,7 @@ extension MSSynthesisSpeech {
 extension MSSynthesisSpeech {
     
     public func startSynthesisToFile(outFilePath: String, synthesisConfig: MSSynthesisConfig) throws -> Bool {
-        
-        self.retriedID = String.randomString(length: 10)
-        
+                
         self.retried = synthesisConfig
         
         self.execute()
@@ -401,7 +399,7 @@ extension MSSynthesisSpeech {
 //    }
     
     func startedEventHandler(result: SPXSpeechSynthesisResult) {
-//        _pro = 0.0
+        //        _pro = 0.0
         
         let acquireResultTime = CFAbsoluteTimeGetCurrent()
         if #available(iOS 14.0, *) {
@@ -416,19 +414,5 @@ extension MSSynthesisSpeech {
         } else {
             self.delegate?.synthesisStarted(audioData: nil, wordBoundarys: self.wordBoundarys)
         }
-        
-//        Task {
-//            await MainActor.run {
-//                timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
-//                    self?.updatePlayProgress()
-//                }
-//            }
-//        }
-        
-        //        if let timer {
-        //            RunLoop.current.add(timer, forMode: .commonModes)
-        //            RunLoop.current.run()
-        //        }
     }
-
 }

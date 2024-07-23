@@ -14,7 +14,7 @@ public protocol ResponseFailRetriedable {
     associatedtype T
     
     /// 每次请求的ID
-    var retriedID: String { set get }
+//    var retriedID: String { set get }
     
     // 失败的次数
     var failCount: Int {set get}
