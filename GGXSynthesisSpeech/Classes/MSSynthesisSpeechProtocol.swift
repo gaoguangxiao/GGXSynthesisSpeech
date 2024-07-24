@@ -23,10 +23,10 @@ import MicrosoftCognitiveServicesSpeech
     @objc optional func wordBoundaried(words:Array<Any>)
     
     //可以播放合成音
-    func synthesisStarted(audioData data: Data?, wordBoundarys: Array<SPXSpeechSynthesisWordBoundaryEventArgs>)
+    func synthesisCompleted(audioData data: Data?, wordBoundarys: Array<SPXSpeechSynthesisWordBoundaryEventArgs>)
     
     //结束播放合成音
-    func synthesisCompleted()
+//    func synthesisCompleted()
 
     @objc optional func visemeReceived(args: SPXSpeechSynthesisVisemeEventArgs)
     

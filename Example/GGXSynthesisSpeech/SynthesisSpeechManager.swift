@@ -142,11 +142,11 @@ extension SynthesisSpeechManager: MSSynthesisSpeechProtocol {
         ZKLog("error: \(error)")
     }
     
-    func synthesisCompleted() {
-        
-    }
+//    func synthesisCompleted() {
+//        
+//    }
     
-    func synthesisStarted(audioData data: Data?, wordBoundarys: Array<SPXSpeechSynthesisWordBoundaryEventArgs>) {
+    func synthesisCompleted(audioData data: Data?, wordBoundarys: Array<SPXSpeechSynthesisWordBoundaryEventArgs>) {
         
         //业务获取到data
         let audioBase64 = data?.base64EncodedString()

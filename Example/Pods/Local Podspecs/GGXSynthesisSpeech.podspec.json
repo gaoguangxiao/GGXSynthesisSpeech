@@ -1,7 +1,7 @@
 {
   "name": "GGXSynthesisSpeech",
-  "version": "0.1.1",
-  "summary": "feat:微软语言合成",
+  "version": "0.1.4",
+  "summary": "feat:语音合成之后，认为complete为合成完毕",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao125@sina.com/GGXSynthesisSpeech",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GGXSynthesisSpeech.git",
-    "tag": "0.1.1"
+    "tag": "0.1.4"
   },
   "swift_versions": "5.0",
   "platforms": {

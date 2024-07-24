@@ -325,25 +325,26 @@ extension MSSynthesisSpeech {
             if result.reason == .synthesizingAudioStarted {
                 if #available(iOS 14.0, *) {
                     self?.delegate?.synthesisStarted?()
-                    self?.logger.log("addSynthesisStartedEventHandler: \(args)")
+//                    self?.logger.log("addSynthesisStartedEventHandler: \(args)")
                 } else {
                     // Fallback on earlier versions
                 }
             }
         })
         
-        synthesizer?.addSynthesizingEventHandler({ [weak self] synthesizer, args in
-            guard let self else { return  }
-            let result: SPXSpeechSynthesisResult = args.result
-            if isSynthesizerFinish == false{
-                isSynthesizerFinish = true
-                startedEventHandler(result: result)
-            }
-        })
+//        synthesizer?.addSynthesizingEventHandler({ [weak self] synthesizer, args in
+//            guard let self else { return  }
+//            let result: SPXSpeechSynthesisResult = args.result
+//            if isSynthesizerFinish == false{
+//                isSynthesizerFinish = true
+//                startedEventHandler(result: result)
+//            }
+//        })
         synthesizer?.addSynthesisCompletedEventHandler({ [weak self] synthesizer, args in
-            ZKTLog("addSynthesisCompletedEventHandler\(args)")
+//            ZKTLog("addSynthesisCompletedEventHandler\(args)")
             guard let self else { return }
-            delegate?.synthesisCompleted()
+//            delegate?.synthesisCompleted()
+            synthesisCompleted(result: args.result)
         })
         
         synthesizer?.addSynthesisCanceledEventHandler({ [weak self]  synthesizer, args in
@@ -365,7 +366,7 @@ extension MSSynthesisSpeech {
             let wordBoundaryEventArgs: SPXSpeechSynthesisWordBoundaryEventArgs = args
             wordBoundarys.append(wordBoundaryEventArgs)
     
-            ZKTLog("addSynthesisWordBoundaryEventHandler\(wordBoundaryEventArgs.text)")
+//            ZKTLog("addSynthesisWordBoundaryEventHandler\(wordBoundaryEventArgs.text)")
 //            let playText = wordBoundarys.map { $0.text }.reduce("", +)
 //            let floTotal = synthesisConfig?.contentFloat
 //            let progress = Float(playText.count) / (floTotal ?? 1)
@@ -398,7 +399,7 @@ extension MSSynthesisSpeech {
         //        self.play()
 //    }
     
-    func startedEventHandler(result: SPXSpeechSynthesisResult) {
+    func synthesisCompleted(result: SPXSpeechSynthesisResult) {
         //        _pro = 0.0
         
         let acquireResultTime = CFAbsoluteTimeGetCurrent()
@@ -410,9 +411,9 @@ extension MSSynthesisSpeech {
         }
         
         if let audioData = result.audioData {
-            self.delegate?.synthesisStarted(audioData: audioData, wordBoundarys: self.wordBoundarys)
+            self.delegate?.synthesisCompleted(audioData: audioData, wordBoundarys: self.wordBoundarys)
         } else {
-            self.delegate?.synthesisStarted(audioData: nil, wordBoundarys: self.wordBoundarys)
+            self.delegate?.synthesisCompleted(audioData: nil, wordBoundarys: self.wordBoundarys)
         }
     }
 }

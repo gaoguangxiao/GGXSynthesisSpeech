@@ -1,6 +1,6 @@
 PODS:
   - GGXSwiftExtension (0.6.2)
-  - GGXSynthesisSpeech (0.1.1):
+  - GGXSynthesisSpeech (0.1.4):
     - MicrosoftCognitiveServicesSpeech-iOS
     - PTDebugView
   - MicrosoftCognitiveServicesSpeech-iOS (1.38.0)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GGXSwiftExtension: d775a0bb239693525f1d18d71c5aaac29d85ff02
-  GGXSynthesisSpeech: 9eeabb776c5e260615387506b92f3d8e2598c166
+  GGXSynthesisSpeech: 9194ebf66e5daad267b7f76f8d9c914f00fdae9c
   MicrosoftCognitiveServicesSpeech-iOS: 614ca9b9bcb836d210823bf31abef7cb5b101035
   PTDebugView: fcba2d292157f90bb3808d8c3bbfafdb42fada88
 
