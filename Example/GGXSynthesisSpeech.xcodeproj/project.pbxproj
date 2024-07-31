@@ -223,6 +223,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MC9Q66TLXQ;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -532,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FEEFFC2623EA1BF6CB79FE1 /* Pods-GGXSynthesisSpeech_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = MC9Q66TLXQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -555,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D87C1C7D583A5599A3CB022 /* Pods-GGXSynthesisSpeech_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = MC9Q66TLXQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

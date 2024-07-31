@@ -13,10 +13,10 @@ extension SPXSpeechSynthesisBoundaryType {
 
     public var rawValueStr: String {
         switch self {
-        case .word : "word"
-        case .punctuation : "punctuation"
-        case .sentence: "sentence"
-        @unknown case _: "unknown" //与`@unknown default`一样
+        case .word : "Word"
+        case .punctuation : "Punctuation"
+        case .sentence: "Sentence"
+        @unknown case _: "Unknown" //与`@unknown default`一样
         }
     }
     

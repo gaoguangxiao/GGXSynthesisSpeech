@@ -161,9 +161,9 @@ extension SynthesisSpeechManager: MSSynthesisSpeechProtocol {
         var jsonArrays: Array<Dictionary<String,Any>> = []
         wordBoundarys.forEach { wordBoundaryEventArgs in
             var wBoundary: Dictionary<String,Any> = [:]
-            wBoundary["resultId"] = wordBoundaryEventArgs.resultId
-            wBoundary["audioOffset"] = wordBoundaryEventArgs.audioOffset
-            wBoundary["duration"] = wordBoundaryEventArgs.duration
+//            wBoundary["resultId"] = wordBoundaryEventArgs.resultId
+            wBoundary["audioOffset"] = (wordBoundaryEventArgs.audioOffset + 5000)/10000
+            wBoundary["duration"] = wordBoundaryEventArgs.duration * 1000
             wBoundary["textOffset"] = wordBoundaryEventArgs.textOffset
             wBoundary["wordLength"] = wordBoundaryEventArgs.wordLength
             wBoundary["text"] = wordBoundaryEventArgs.text
@@ -172,10 +172,10 @@ extension SynthesisSpeechManager: MSSynthesisSpeechProtocol {
         }
         
         if let jsonString = jsonArrays.toJSONString() {
-            logger.info("字边界: \(jsonString)")
             Task {
                 await MainActor.run {
                     info = "字边界:\(jsonString)\n本地路径：\(synthesisConfig.localFilePath)"
+                    logger.info("字边界: \(info)")
                 }
             }
         }
