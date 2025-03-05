@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GGXSynthesisSpeech'
-  s.version          = '0.1.7'
-  s.summary          = 'feat:调整boundaryType的首字母大小'
+  s.version          = '0.2.0'
+  s.summary          = 'feat:删除ssm换行引起的杂音'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
