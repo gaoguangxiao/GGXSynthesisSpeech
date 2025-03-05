@@ -108,7 +108,6 @@ public class MSSynthesisSpeech: NSObject, ResponseFailRetriedable {
         let ssmlText = """
         <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='zh-CN'><voice name='\(model.vocal)'><prosody pitch='\(model.transPitch)' volume='\(model.transVolume)' rate='\(model.transRate)'>\(content)</prosody></voice></speak>
 """
-        ZKTLog(ssmlText)
         return ssmlText
     }
 
