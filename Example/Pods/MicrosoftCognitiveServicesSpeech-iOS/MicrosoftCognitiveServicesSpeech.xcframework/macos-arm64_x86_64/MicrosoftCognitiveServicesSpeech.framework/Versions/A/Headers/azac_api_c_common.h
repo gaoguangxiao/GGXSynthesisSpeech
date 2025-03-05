@@ -5,8 +5,6 @@
 
 #pragma once
 
-// TODO: TFS#3671215 - Vision: C/C++ azac_api* files are in shared include directory, speech and vision share
-
 #include <stdbool.h>
 #include "azac_error.h"
 

@@ -7,8 +7,6 @@
 #include "azac_error.h"
 #include <inttypes.h>
 
-// TODO: TFS#3671215 - Vision: C/C++ azac_api* files are in shared include directory, speech and vision share
-
 #ifndef _MSC_VER
 // macros in this header generate a bunch of
 // "ISO C++11 requires at least one argument for the "..." in a variadic macro" errors.

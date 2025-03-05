@@ -117,6 +117,12 @@ enum class PropertyId
     SpeechServiceConnection_Url = 1104,
 
     /// <summary>
+    /// Specifies the list of hosts for which proxies should not be used. This setting overrides all other configurations.
+    /// Hostnames are separated by commas and are matched in a case-insensitive manner. Wildcards are not supported.
+    /// </summary>
+    SpeechServiceConnection_ProxyHostBypass = 1105,
+
+    /// <summary>
     /// The list of comma separated languages used as target translation languages. Under normal circumstances,
     /// you shouldn't have to use this property directly. Instead use <see cref="SpeechTranslationConfig::AddTargetLanguage"/>
     /// and <see cref="SpeechTranslationConfig::GetTargetLanguages"/>.
@@ -186,10 +192,7 @@ enum class PropertyId
     SpeechServiceConnection_RecoModelName = 3005,
 
     /// <summary>
-    /// The decryption key of the model to be used for speech recognition.
-    /// Under normal circumstances, you shouldn't use this property directly.
-    /// Currently this is only valid when EmbeddedSpeechConfig is used.
-    /// Added in version 1.19.0
+    /// This property is deprecated.
     /// </summary>
     SpeechServiceConnection_RecoModelKey = 3006,
 
@@ -254,10 +257,7 @@ enum class PropertyId
     SpeechServiceConnection_SynthOfflineVoice = 3113,
 
     /// <summary>
-    /// The decryption key of the voice to be used for speech synthesis.
-    /// Under normal circumstances, you shouldn't use this property directly.
-    /// Instead, use <see cref="EmbeddedSpeechConfig::SetSpeechSynthesisVoice"/>.
-    /// Added in version 1.19.0
+    /// This property is deprecated.
     /// </summary>
     SpeechServiceConnection_SynthModelKey = 3114,
 
@@ -471,6 +471,23 @@ enum class PropertyId
     SpeechServiceResponse_SynthesisBackend = 5020,
 
     /// <summary>
+    /// Determines if intermediate results contain speaker identification.
+    /// </summary>
+    /// <remarks>
+    /// <para>
+    /// Allowed values are "true" or "false". If set to "true", the intermediate results will contain speaker identification.
+    /// The default value if unset or set to an invalid value is "false".
+    /// </para>
+    /// <para>
+    /// This is currently only supported for scenarios using the <see cref="Transcription.ConversationTranscriber"./>
+    /// </para>
+    /// <para>
+    /// Adding in version 1.40.
+    /// </para>
+    /// </remarks>
+    SpeechServiceResponse_DiarizeIntermediateResults = 5025,
+
+    /// <summary>
     /// The cancellation reason. Currently unused.
     /// </summary>
     CancellationDetails_Reason = 6000,
@@ -558,6 +575,42 @@ enum class PropertyId
     /// https://aka.ms/csspeech/timeouts.
     /// </summary>
     Speech_SegmentationSilenceTimeoutMs = 9002,
+
+    /// <summary>
+    /// The maximum length of a spoken phrase when using the "Time" segmentation strategy.
+    /// As the length of a spoken phrase approaches this value, the <see also cref="Speech_SegmentationSilenceTimeoutMs"/> will begin being reduced until either the phrase silence timeout is hit or the phrase reaches the maximum length.
+    /// </summary>
+    Speech_SegmentationMaximumTimeMs = 9003,
+
+    /// <summary>
+    /// The strategy used to determine when a spoken phrase has ended and a final Recognized result should be generated.
+    /// Allowed values are "Default", "Time", and "Semantic".
+    /// </summary>
+    /// <remarks>
+    /// Valid values are:
+    /// <list type="bullet">
+    /// <item>
+    /// <term>Default</term>
+    /// <description>Use the default strategy and settings as determined by the Speech Service. Use in most situations.</description>
+    /// </item>
+    /// <item>
+    /// <term>Time</term>  
+    /// <description>Uses a time based strategy where the amount of silence between speech is used to determine when to generate a final result.</description>
+    /// </item>
+    /// <item>
+    /// <term>Semantic</term>
+    /// <description>Uses an AI model to deterine the end of a spoken phrase based on the content of the phrase.</description>
+    /// </item>
+    /// </list>
+    /// <para>
+    /// When using the time strategy, the <see cref="Speech_SegmentationSilenceTimeoutMs"/> property can be used to adjust the amount of silence needed to determine the end of a spoken phrase, 
+    /// and the <see cref="Speech_SegmentationMaximumTimeMs"/> property can be used to adjust the maximum length of a spoken phrase.
+    /// </para>
+    /// <para>
+    /// The semantic strategy has no control properties available.
+    /// </para>
+    /// </remarks> 
+    Speech_SegmentationStrategy = 9004,
 
     /// <summary>
     /// Identifier used to connect to the backend service.
@@ -727,9 +780,7 @@ enum class PropertyId
     SpeechTranslation_ModelName = 13100,
 
     /// <summary>
-    /// The decryption key of a model to be used for speech translation.
-    /// Do not use this property directly.
-    /// Currently this is only valid when EmbeddedSpeechConfig is used.
+    /// This property is deprecated.
     /// </summary>
     SpeechTranslation_ModelKey = 13101,
 
@@ -741,9 +792,7 @@ enum class PropertyId
     KeywordRecognition_ModelName = 13200,
 
     /// <summary>
-    /// The decryption key of a model to be used for keyword recognition.
-    /// Do not use this property directly.
-    /// Currently this is only valid when EmbeddedSpeechConfig is used.
+    /// This property is deprecated.
     /// </summary>
     KeywordRecognition_ModelKey = 13201,
 
@@ -755,7 +804,22 @@ enum class PropertyId
     /// The default setting is "false". Note that metrics may not be available
     /// from all embedded speech scenarios.
     /// </summary>
-    EmbeddedSpeech_EnablePerformanceMetrics = 13300
+    EmbeddedSpeech_EnablePerformanceMetrics = 13300,
+
+    /// <summary>
+    /// The pitch of the synthesized speech.
+    /// </summary>
+    SpeechSynthesisRequest_Pitch = 14001,
+
+    /// <summary>
+    /// The rate of the synthesized speech.
+    /// </summary>
+    SpeechSynthesisRequest_Rate = 14002,
+
+    /// <summary>
+    /// The volume of the synthesized speech.
+    /// </summary>
+    SpeechSynthesisRequest_Volume = 14003,
 };
 
 /// <summary>
@@ -1587,6 +1651,35 @@ enum class SpeechSynthesisBoundaryType
     /// Sentence boundary
     /// </summary>
     Sentence = 2
+};
+
+/// <summary>
+/// The strategy used to determine when a spoken phrase has ended and a final Recognized result should be generated.
+/// Allowed values are "Default", "Time", and "Semantic".
+/// </summary>
+enum class SegmentationStrategy
+{
+    /// <summary>
+    /// Use the default strategy and settings as determined by the Speech Service. Use in most situations.
+    /// </summary>
+    Default = 0,
+
+    /// <summary>
+    /// Uses a time based strategy where the amount of silence between speech is used to determine when to generate a final result.
+    /// </summary>
+    /// <para>
+    /// When using the time strategy, the <see cref="Speech_SegmentationSilenceTimeoutMs"/> property can be used to adjust the amount of silence needed to determine the end of a spoken phrase, 
+    /// and the <see cref="Speech_SegmentationMaximumTimeMs"/> property can be used to adjust the maximum length of a spoken phrase.
+    /// </para>
+    Time = 1,
+
+    /// <summary>
+    /// Uses an AI model to deterine the end of a spoken phrase based on the content of the phrase.
+    /// </summary>
+    /// <para>
+    /// The semantic strategy has no control properties available.
+    /// </para>
+    Semantic = 2
 };
 
 } } } // Microsoft::CognitiveServices::Speech

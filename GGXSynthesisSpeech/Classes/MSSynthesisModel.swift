@@ -26,7 +26,7 @@ public struct MSSynthesisConfig {
     public var localFilePath: String = ""
     
     /// Xiaoshuang
-    public var vocal: String = "zh-CN-XiaoshuangNeural"
+    public var vocal: String = "zh-CN-XiaochenMultilingualNeural"
     
     //播放速度
     public var rate: Double = 1.0
@@ -48,7 +48,7 @@ public struct MSSynthesisConfig {
         return "\(volumeStr)%"
     }
     //
-    public var pitch: Double = 1.0
+    public var pitch: Double = 1.2
     public var transPitch: String {
         let pitchStr = pitch * 100 - 100
         if pitchStr >= 0 {

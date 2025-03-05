@@ -101,6 +101,12 @@ typedef NS_ENUM(NSUInteger, SPXPropertyId)
     SPXSpeechServiceConnectionUrl = 1104,
 
     /**
+     * Specifies the list of hosts for which proxies should not be used. This setting overrides all other configurations.
+     * Hostnames are separated by commas and are matched in a case-insensitive manner. Wildcards are not supported.
+     */
+    SPXSpeechServiceConnectionProxyHostBypass = 1105,
+
+    /**
      * The list of comma separated languages (BCP-47 format) used as target translation languages. Under normal circumstances,
      * you shouldn't have to use this property directly.
      * Instead use SPXSpeechTranslationConfiguration.addTargetLanguage
@@ -398,6 +404,15 @@ typedef NS_ENUM(NSUInteger, SPXPropertyId)
      */
     SPXSpeechServiceResponseSynthesisBackend = 5020,
 
+    /** 
+     * Determines if intermediate results contain speaker identification.
+     * Allowed values are "true" or "false". If set to "true", the intermediate results will contain speaker identification.
+     * The default value if unset or set to an invalid value is "false".
+     * This is currently only supported for scenarios using the ConversationTranscriber".
+     * Adding in version 1.40.
+     */
+    SPXSpeechServiceResponseDiarizeIntermediateResults = 5025,
+
     /**
      * The cancellation reason. Currently unused.
      */
@@ -450,7 +465,29 @@ typedef NS_ENUM(NSUInteger, SPXPropertyId)
      * For more information about timeout configuration that includes discussion of default behaviors, please visit
      * https://aka.ms/csspeech/timeouts.
      */
-     SPXSpeechSegmentationSilenceTimeoutMs = 9002,
+    SPXSpeechSegmentationSilenceTimeoutMs = 9002,
+    
+    /**
+     * The maximum length of a spoken phrase when using the Time segmentation strategy.
+     * As the length of a spoken phrase approaches this value, the <see also cref="Speech_SegmentationSilenceTimeoutMs"/> will begin being reduced until either the phrase silence timeout is hit or the phrase reaches the maximum length.
+     */
+    SPXSpeechSegmentationMaximumTimeMs = 9003,
+
+    /**
+     * The strategy used to determine when a spoken phrase has ended and a final recognized result should be generated.
+     * Allowed values are "Default", "Time", and "Semantic".
+     *
+     * Valid values are:
+     * - **Default**: Use the default strategy and settings as determined by the Speech Service. Use in most situations.
+     * - **Time**: Uses a time-based strategy where the amount of silence between speech is used to determine when to generate a final result.
+     * - **Semantic**: Uses an AI model to determine the end of a spoken phrase based on the content of the phrase.
+     *
+     * When using the time strategy, the `Speech_SegmentationSilenceTimeoutMs` property can be used to adjust the amount of silence needed to determine the end of a spoken phrase, 
+     * and the `Speech_SegmentationMaximumTimeMs` property can be used to adjust the maximum length of a spoken phrase.
+     *
+     * The semantic strategy has no control properties available.
+     */
+    SPXSpeechSegmentationStrategy = 9004,
 
     /**
      * The timestamp associated to data buffer written by client when using Pull/Push audio mode streams.

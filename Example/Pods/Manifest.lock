@@ -1,11 +1,13 @@
 PODS:
-  - GGXSwiftExtension (0.6.2)
-  - GGXSynthesisSpeech (0.1.4):
+  - GGXSwiftExtension (0.8.1)
+  - GGXSynthesisSpeech (0.1.5):
     - MicrosoftCognitiveServicesSpeech-iOS
     - PTDebugView
-  - MicrosoftCognitiveServicesSpeech-iOS (1.38.0)
-  - PTDebugView (0.1.8):
+  - MicrosoftCognitiveServicesSpeech-iOS (1.42.0)
+  - PTDebugView (0.3.2):
     - GGXSwiftExtension
+    - SnapKit
+  - SnapKit (5.7.1)
 
 DEPENDENCIES:
   - GGXSynthesisSpeech (from `../`)
@@ -15,17 +17,19 @@ SPEC REPOS:
     - GGXSwiftExtension
     - MicrosoftCognitiveServicesSpeech-iOS
     - PTDebugView
+    - SnapKit
 
 EXTERNAL SOURCES:
   GGXSynthesisSpeech:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGXSwiftExtension: d775a0bb239693525f1d18d71c5aaac29d85ff02
-  GGXSynthesisSpeech: 9194ebf66e5daad267b7f76f8d9c914f00fdae9c
-  MicrosoftCognitiveServicesSpeech-iOS: 614ca9b9bcb836d210823bf31abef7cb5b101035
-  PTDebugView: fcba2d292157f90bb3808d8c3bbfafdb42fada88
+  GGXSwiftExtension: 38e8e4f91a389c599c4336bb545132d8b56d1573
+  GGXSynthesisSpeech: 30cec6ee85f413026975389280892e45fd9ef80a
+  MicrosoftCognitiveServicesSpeech-iOS: 71a337832ef7a53f927ef1c804d85329a15b8fba
+  PTDebugView: 0d2fa1754062a3cdff8dfba7f29fb061d0b8e95d
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
 PODFILE CHECKSUM: 6d3f45fed122a18a0e75cc7c3bc8c57dc69d97ae
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.16.2

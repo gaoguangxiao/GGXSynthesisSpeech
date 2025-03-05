@@ -34,6 +34,7 @@ enum  PropertyId
     SpeechServiceConnection_ProxyUserName = 1102,
     SpeechServiceConnection_ProxyPassword = 1103,
     SpeechServiceConnection_Url = 1104,
+    SpeechServiceConnection_ProxyHostBypass = 1105,
 
     SpeechServiceConnection_TranslationToLanguages = 2000,
     SpeechServiceConnection_TranslationVoice = 2001,
@@ -95,6 +96,7 @@ enum  PropertyId
     SpeechServiceResponse_SynthesisConnectionLatencyMs = 5013,
     SpeechServiceResponse_SynthesisNetworkLatencyMs = 5014,
     SpeechServiceResponse_SynthesisServiceLatencyMs = 5015,
+    SpeechServiceResponse_DiarizeIntermediateResults = 5025,
 
     CancellationDetails_Reason = 6000,
     CancellationDetails_ReasonText = 6001,
@@ -112,6 +114,8 @@ enum  PropertyId
 
     Speech_LogFilename = 9001,
     Speech_SegmentationSilenceTimeoutMs = 9002,
+    Speech_SegmentationMaximumTimeMs = 9003,
+    Speech_SegmentationStrategy = 9004,
 
     Conversation_ApplicationId = 10000,
     Conversation_DialogType = 10001,

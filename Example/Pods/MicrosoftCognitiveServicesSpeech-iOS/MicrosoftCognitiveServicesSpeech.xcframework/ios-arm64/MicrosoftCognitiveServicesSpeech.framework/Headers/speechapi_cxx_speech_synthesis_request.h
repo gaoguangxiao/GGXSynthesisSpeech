@@ -38,7 +38,7 @@ public:
         /// Send a piece of text to the speech synthesis service to be synthesized.
         /// </summary>
         /// <param name="text">The text piece to be synthesized.</param>
-        void Write(const std::string &text)
+        void Write(const SPXSTRING &text)
         {
             m_parent.SendTextPiece(text);
         }
@@ -67,7 +67,7 @@ public:
     explicit operator SPXREQUESTHANDLE() const { return m_hrequest; }
 
     /// <summary>
-    /// Creates a speech synthesis request, which text streaming is enabled.
+    /// Creates a speech synthesis request, with text streaming is enabled.
     /// </summary>
     /// <returns>A shared pointer to the new speech synthesis request instance.</returns>
     static std::shared_ptr<SpeechSynthesisRequest> NewTextStreamingRequest()
@@ -79,12 +79,6 @@ public:
         return std::shared_ptr<SpeechSynthesisRequest>(ptr);
     }
 
-    // void SetPersonalVoicePromptAudio(const uint8_t* audioData, uint32_t audioSize)
-    // {
-    //     SPXREQUESTHANDLE hrequest = SPXHANDLE_INVALID;
-    //     SPX_THROW_ON_FAIL(speech_synthesis_request_create_from_personal_voice_prompt_audio_data(audioData, audioSize, &hrequest));
-    // }
-
     /// <summary>
     /// Gets the input stream for the speech synthesis request.
     /// </summary>
@@ -92,6 +86,30 @@ public:
     InputStream& GetInputStream()
     {
         return m_inputStream;
+    }
+
+    /// <summary>
+    /// Sets the pitch of the synthesized speech.
+    /// </summary>
+    /// <param name="pitch">The pitch of the synthesized speech.</param>
+    void SetPitch(const SPXSTRING& pitch) {
+        SetProperty(PropertyId::SpeechSynthesisRequest_Pitch, pitch);
+    }
+
+    /// <summary>
+    /// Set the speaking rate.
+    /// </summary>
+    /// <param name="rate">The speaking rate.</param>
+    void SetRate(const SPXSTRING& rate) {
+        SetProperty(PropertyId::SpeechSynthesisRequest_Rate, rate);
+    }
+
+    /// <summary>
+    /// Set the speaking volume.
+    /// </summary>
+    /// <param name="volume">The speaking volume.</param>
+    void SetVolume(const SPXSTRING& volume) {
+        SetProperty(PropertyId::SpeechSynthesisRequest_Volume, volume);
     }
 
     /// <summary>
@@ -147,11 +165,75 @@ protected:
         SPX_THROW_ON_FAIL(speech_synthesis_request_finish(m_hrequest));
     }
 
+    /// <summary>
+    /// Sets a property value by ID.
+    /// </summary>
+    /// <param name="id">The property id.</param>
+    /// <param name="value">The property value.</param>
+    void SetProperty(PropertyId id, const SPXSTRING& value)
+    {
+        property_bag_set_string(m_propertybag, static_cast<int>(id), nullptr, Utils::ToUTF8(value).c_str());
+    }
+
     /*! \endcond */
 
 private:
     DISABLE_COPY_AND_MOVE(SpeechSynthesisRequest);
 
-    };
+
+
+};
+
+/// <summary>
+/// Class that defines the speech synthesis request for personal voice (aka.ms/azureai/personal-voice).
+/// This class is in preview and is subject to change.
+/// Added in version 1.39.0
+/// </summary>
+class PersonalVoiceSynthesisRequest: public SpeechSynthesisRequest
+{
+public:
+
+    /// <summary>
+    /// Creates a personal voice speech synthesis request, with text streaming is enabled.
+    /// </summary>
+    /// <param name="personalVoiceName">The name of the personal voice to be used for synthesis.</param>
+    /// <param name="modelName">The name of the model. E.g., DragonLatestNeural or PhoenixLatestNeural</param>
+    /// <returns>A shared pointer to the new speech synthesis request instance.</returns>
+    static std::shared_ptr<PersonalVoiceSynthesisRequest> NewTextStreamingRequest(const std::string& personalVoiceName, const std::string& modelName)
+    {
+        SPXREQUESTHANDLE hrequest = SPXHANDLE_INVALID;
+        SPX_THROW_ON_FAIL(speech_synthesis_request_create(true, false, nullptr, 0, &hrequest));
+
+        SPX_THROW_ON_FAIL(speech_synthesis_request_set_voice(hrequest, nullptr, personalVoiceName.c_str(), modelName.c_str()));
+
+        auto ptr = new PersonalVoiceSynthesisRequest(hrequest);
+        return std::shared_ptr<PersonalVoiceSynthesisRequest>(ptr);
+    }
+
+    /// <summary>
+    /// Destructs the object.
+    /// </summary>
+    virtual ~PersonalVoiceSynthesisRequest()
+    {
+
+    }
+
+protected:
+
+    /*! \cond PROTECTED */
+
+    /// <summary>
+    /// Internal constructor. Creates a new instance using the provided handle.
+    /// </summary>
+    explicit PersonalVoiceSynthesisRequest(SPXREQUESTHANDLE hrequest)
+        :SpeechSynthesisRequest(hrequest)
+        {}
+
+    /*! \endcond */
+
+private:
+    DISABLE_COPY_AND_MOVE(PersonalVoiceSynthesisRequest);
+
+};
 
 }}}

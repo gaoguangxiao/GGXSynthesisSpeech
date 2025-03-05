@@ -1,7 +1,7 @@
 {
   "name": "GGXSynthesisSpeech",
-  "version": "0.1.4",
-  "summary": "feat:语音合成之后，认为complete为合成完毕",
+  "version": "0.1.5",
+  "summary": "feat:调整boundaryType的首字母大小",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao125@sina.com/GGXSynthesisSpeech",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GGXSynthesisSpeech.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -21,12 +21,8 @@
   },
   "source_files": "GGXSynthesisSpeech/Classes/**/*",
   "dependencies": {
-    "MicrosoftCognitiveServicesSpeech-iOS": [
-
-    ],
-    "PTDebugView": [
-
-    ]
+    "MicrosoftCognitiveServicesSpeech-iOS": [],
+    "PTDebugView": []
   },
   "swift_version": "5.0"
 }

@@ -26,7 +26,7 @@ SPX_EXPORT
  * @return an instance of auto detection source language result.
  */
 
-- (nonnull instancetype)init:(nonnull SPXSpeechRecognitionResult *)speechRecognitionResult;
+- (nonnull instancetype)init:(nonnull SPXRecognitionResult *)speechRecognitionResult;
 
 
 @end

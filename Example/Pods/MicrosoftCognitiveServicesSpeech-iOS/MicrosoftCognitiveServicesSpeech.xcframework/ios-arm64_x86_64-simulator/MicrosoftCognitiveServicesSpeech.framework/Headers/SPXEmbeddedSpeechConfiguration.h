@@ -109,24 +109,24 @@ NS_SWIFT_UNAVAILABLE("Use the method with Swift-compatible error handling.");
  * Sets the model for speech recognition.
  *
  * @param name The model name.
- * @param key The model decryption key.
+ * @param license The license text.
  */
-- (void)setSpeechRecognitionModel:(nonnull NSString *)name key:(nonnull NSString *)key;
+- (void)setSpeechRecognitionModel:(nonnull NSString *)name license:(nonnull NSString *)license;
 /**
  * Sets the voice for embedded speech synthesis.
  *
  * @param name The voice name of the embedded speech synthesis.
- * @param key The decryption key.
+ * @param license The license text.
  */
-- (void)setSpeechSynthesisVoice:(nonnull NSString *)name key:(nonnull NSString *)key;
+- (void)setSpeechSynthesisVoice:(nonnull NSString *)name license:(nonnull NSString *)license;
 
 /**
  * Sets the model for speech translation.
  *
  * @param name The model name.
- * @param key The model decryption key.
+ * @param license The license text.
  */
-- (void)setSpeechTranslationModel:(nonnull NSString *)name key:(nonnull NSString *)key;
+- (void)setSpeechTranslationModel:(nonnull NSString *)name license:(nonnull NSString *)license;
 
 /**
  * Returns the property value.

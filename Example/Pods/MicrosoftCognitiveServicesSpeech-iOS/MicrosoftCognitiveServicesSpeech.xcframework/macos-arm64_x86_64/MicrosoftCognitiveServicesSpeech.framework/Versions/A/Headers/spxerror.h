@@ -439,11 +439,17 @@
 /// <summary>
 /// Enabled Voice Activity Detection while using keyword recognition is not allowed.
 /// </summary>
-#define SPXERR_VAD_COULD_NOT_USE_WITH_KEYWORD_RECOGNIZER \
-    AZAC_ERR_VAD_COULD_NOT_USE_WITH_KEYWORD_RECOGNIZER
+#define SPXERR_VAD_CANNOT_BE_USED_WITH_KEYWORD_RECOGNIZER \
+    AZAC_ERR_VAD_CANNOT_BE_USED_WITH_KEYWORD_RECOGNIZER
 
 /// <summary>
 /// The specified RecoEngineAdapter could not be created.
 /// </summary>
 #define SPXERR_COULD_NOT_CREATE_ENGINE_ADAPTER \
         AZAC_ERR_COULD_NOT_CREATE_ENGINE_ADAPTER
+
+/// <summary>
+/// MAS extension library not found.
+/// </summary>
+#define SPXERR_MAS_LIBRARY_NOT_FOUND \
+        AZAC_ERR_MAS_LIBRARY_NOT_FOUND

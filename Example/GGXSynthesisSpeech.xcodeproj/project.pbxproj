@@ -280,6 +280,7 @@
 				"${BUILT_PRODUCTS_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/GGXSynthesisSpeech/GGXSynthesisSpeech.framework",
 				"${BUILT_PRODUCTS_DIR}/PTDebugView/PTDebugView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MicrosoftCognitiveServicesSpeech-iOS/MicrosoftCognitiveServicesSpeech.framework/MicrosoftCognitiveServicesSpeech",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -287,6 +288,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGXSwiftExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGXSynthesisSpeech.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PTDebugView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftCognitiveServicesSpeech.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

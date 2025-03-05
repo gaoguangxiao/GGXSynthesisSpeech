@@ -5,8 +5,6 @@
 
 #pragma once
 
-// TODO: TFS#3671215 - Vision: C/C++ azac_api* files are in shared include directory, speech and vision share
-
 #ifndef AZAC_SUPPRESS_COMMON_INCLUDE_FROM_DIAGNOSTICS
 #define AZAC_SUPPRESS_DIAGNOSTICS_INCLUDE_FROM_COMMON
 #include "azac_api_c_common.h"

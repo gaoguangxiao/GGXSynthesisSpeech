@@ -24,7 +24,7 @@ class SynthesisSpeechManager: NSObject, ObservableObject {
     @PTLogger(category: "SynthesisSpeechManager")
     var logger
     
-    var content = "这可能是由于视图的状态和UI更新之间的不一致性所致。为了解决这个问题，你可以采取以下几种方法"
+    var content = "NPC，你好呀"
     
     @Published var tprogress: Float = 0
     
@@ -33,10 +33,10 @@ class SynthesisSpeechManager: NSObject, ObservableObject {
     
     lazy var synthesisConfig: MSSynthesisConfig = {
         var model = MSSynthesisConfig()
-        model.vocal = "zh-CN-XiaochenMultilingualNeural"
-        model.rate = 0.75
-        model.pitch = 1.2
-        model.volume = 1
+//        model.vocal = "zh-CN-XiaochenMultilingualNeural"
+//        model.rate = 0.75
+//        model.pitch = 1.0
+//        model.volume = 1
         model.path = "/1/2/m"
         model.content = content
         return model

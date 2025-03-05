@@ -19,7 +19,9 @@ public class Logger {
     }
  
     public func debug(_ message: String) {
+#if DEBUG
         os_log("%@", log: OSLog(subsystem: subsystem, category: category), type: .debug, message)
+#endif
     }
  
     public func info(_ message: String) {

@@ -4,8 +4,6 @@
 
 #pragma once
 
-// TODO: TFS#3671215 - Vision: C/C++ azac_api* files are in shared include directory, speech and vision share
-
 #include <stdint.h>
 
 /// <summary>
@@ -401,7 +399,7 @@ typedef uintptr_t AZACHR;
 /// <summary>
 /// Enabled Voice Activity Detection while using keyword recognition is not allowed.
 /// </summary>
-#define AZAC_ERR_VAD_COULD_NOT_USE_WITH_KEYWORD_RECOGNIZER __AZAC_ERRCODE_FAILED(0x067)
+#define AZAC_ERR_VAD_CANNOT_BE_USED_WITH_KEYWORD_RECOGNIZER __AZAC_ERRCODE_FAILED(0x067)
 
 /// <summary>
 /// The specified RecoEngineAdapter could not be created.
@@ -453,3 +451,8 @@ typedef uintptr_t AZACHR;
 /// Unexpected message received
 /// </summary>
 #define AZAC_ERR_NETWORK_PROTOCOL_VIOLATION __AZAC_ERRCODE_FAILED(0x091)
+
+/// <summary>
+/// MAS extension library not found.
+/// </summary>
+#define AZAC_ERR_MAS_LIBRARY_NOT_FOUND  __AZAC_ERRCODE_FAILED(0x092)

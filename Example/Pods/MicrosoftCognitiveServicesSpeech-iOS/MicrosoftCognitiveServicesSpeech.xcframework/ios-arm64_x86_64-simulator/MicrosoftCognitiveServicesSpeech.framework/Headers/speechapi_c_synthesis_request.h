@@ -7,6 +7,7 @@
 #include "speechapi_c_common.h"
 
 SPXAPI speech_synthesis_request_create(bool textStreamingEnabled, bool isSSML, const char* inputText, uint32_t textLength, SPXREQUESTHANDLE* hrequest);
+SPXAPI speech_synthesis_request_set_voice(SPXREQUESTHANDLE hrequest, const char* voice, const char* personalVoice, const char* modelName);
 SPXAPI speech_synthesis_request_send_text_piece(SPXREQUESTHANDLE hrequest, const char* text, uint32_t textLength);
 SPXAPI speech_synthesis_request_finish(SPXREQUESTHANDLE hrequest);
 SPXAPI speech_synthesis_request_handle_is_valid(SPXREQUESTHANDLE hrequest);

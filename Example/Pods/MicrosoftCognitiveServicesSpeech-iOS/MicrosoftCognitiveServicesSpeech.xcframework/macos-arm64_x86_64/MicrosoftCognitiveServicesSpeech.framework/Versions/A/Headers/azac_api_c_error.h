@@ -1,11 +1,9 @@
 //
 // Copyright (c) Microsoft. All rights reserved.
-// See https://aka.ms/azai/vision/license for the full license information.
+// See https://aka.ms/azai/license202106 for the full license information.
 //
 
 #pragma once
-
-// TODO: TFS#3671215 - Vision: C/C++ azac_api* files are in shared include directory, speech and vision share
 
 #ifndef AZAC_SUPPRESS_COMMON_INCLUDE_FROM_ERROR
 #define AZAC_SUPPRESS_ERROR_INCLUDE_FROM_COMMON

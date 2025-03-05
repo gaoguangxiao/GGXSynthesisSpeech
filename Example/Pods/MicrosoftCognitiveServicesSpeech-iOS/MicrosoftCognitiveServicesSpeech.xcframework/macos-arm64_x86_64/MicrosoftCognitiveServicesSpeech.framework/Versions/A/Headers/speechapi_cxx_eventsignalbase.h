@@ -12,8 +12,6 @@
 #include <mutex>
 #include <string>
 
-// TODO: TFS#3671067 - Vision: Consider moving majority of EventSignal to AI::Core::Details namespace, and refactoring Vision::Core::Events to inherit, and relay to private base
-
 #include "speechapi_cxx_common.h"
 
 namespace Microsoft {
