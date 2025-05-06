@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GGXSynthesisSpeech'
-  s.version          = '0.2.1'
+  s.version          = '0.4.0'
   s.summary          = 'feat: 语言合成之后返回之前的文本'
 
 # This description is used to generate tags and improve search results.
