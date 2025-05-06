@@ -408,10 +408,13 @@ extension MSSynthesisSpeech {
             ZKTLog("合成可以播放")
         }
         
+        guard let content = retried.content else {
+            return
+        }
         if let audioData = result.audioData {
-            self.delegate?.synthesisCompleted(audioData: audioData, wordBoundarys: self.wordBoundarys)
+            self.delegate?.synthesisCompleted(audioData: audioData, content: content, wordBoundarys: self.wordBoundarys)
         } else {
-            self.delegate?.synthesisCompleted(audioData: nil, wordBoundarys: self.wordBoundarys)
+            self.delegate?.synthesisCompleted(audioData: nil, content: content, wordBoundarys: self.wordBoundarys)
         }
     }
 }
