@@ -11,7 +11,7 @@ import MicrosoftCognitiveServicesSpeech
 @objc public protocol MSSynthesisSpeechProtocol: NSObjectProtocol {
     
     // start synthesis
-    @objc optional func synthesisStarted()
+    @objc optional func synthesisStarted(content: String)
     
     // stop synthesis callback
     @objc optional func synthesisCanceled(args: SPXSpeechSynthesisEventArgs)

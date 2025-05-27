@@ -321,7 +321,10 @@ extension MSSynthesisSpeech {
         synthesizer?.addSynthesisStartedEventHandler({ [weak self] synthesizer, args in
             let result: SPXSpeechSynthesisResult = args.result
             if result.reason == .synthesizingAudioStarted {
-                self?.delegate?.synthesisStarted?()
+                guard let content = self?.retried.content else {
+                    return
+                }
+                self?.delegate?.synthesisStarted?(content: content)
             }
         })
         

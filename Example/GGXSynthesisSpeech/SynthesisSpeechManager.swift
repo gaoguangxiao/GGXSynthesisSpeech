@@ -122,6 +122,9 @@ extension SynthesisSpeechManager {
 }
 
 extension SynthesisSpeechManager: MSSynthesisSpeechProtocol {
+    func synthesisCompleted(audioData data: Data?, content: String, wordBoundarys: Array<SPXSpeechSynthesisWordBoundaryEventArgs>) {
+        
+    }
     
     func synthesisError(msg: String) {
         ZKLog("报错: \(msg)")
