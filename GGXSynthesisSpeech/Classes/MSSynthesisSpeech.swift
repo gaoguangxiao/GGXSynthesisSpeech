@@ -321,12 +321,7 @@ extension MSSynthesisSpeech {
         synthesizer?.addSynthesisStartedEventHandler({ [weak self] synthesizer, args in
             let result: SPXSpeechSynthesisResult = args.result
             if result.reason == .synthesizingAudioStarted {
-                if #available(iOS 14.0, *) {
-                    self?.delegate?.synthesisStarted?()
-//                    self?.logger.log("addSynthesisStartedEventHandler: \(args)")
-                } else {
-                    // Fallback on earlier versions
-                }
+                self?.delegate?.synthesisStarted?()
             }
         })
         
