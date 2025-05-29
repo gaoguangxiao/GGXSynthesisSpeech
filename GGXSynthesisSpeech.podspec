@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GGXSynthesisSpeech'
-  s.version          = '0.4.4'
+  s.version          = '0.5.0'
   s.summary          = 'feat: 语言合成失败事件的文本'
 
 # This description is used to generate tags and improve search results.

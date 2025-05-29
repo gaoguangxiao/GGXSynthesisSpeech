@@ -122,14 +122,14 @@ extension SynthesisSpeechManager {
 }
 
 extension SynthesisSpeechManager: MSSynthesisSpeechProtocol {
+    func synthesisError(content: String, error: NSError) {
+        ZKLog("报错: \(error.localizedDescription)")
+    }
+    
     func synthesisCompleted(audioData data: Data?, content: String, wordBoundarys: Array<SPXSpeechSynthesisWordBoundaryEventArgs>) {
         
     }
-    
-    func synthesisError(msg: String) {
-        ZKLog("报错: \(msg)")
-    }
-    
+
     func synthesisCanceled(args: SPXSpeechSynthesisEventArgs) {
         ZKLog("停止: \(args.result.resultId)")
         let result: SPXSpeechSynthesisResult = args.result
