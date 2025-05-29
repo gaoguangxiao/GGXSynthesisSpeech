@@ -44,7 +44,10 @@ public class MSSynthesisSpeech: NSObject, ResponseFailRetriedable {
     }
     
     public func completeRetried(error: NSError) {
-        delegate?.synthesisError(error: error)
+        guard let content = self.retried.content else {
+            return
+        }
+        delegate?.synthesisError(content: content, error: error)
     }
     
     @PTLogger(category: "synthesisSpeech")
